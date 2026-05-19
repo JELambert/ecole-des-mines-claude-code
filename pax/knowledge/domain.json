@@ -1,13 +1,15 @@
 {
-  "id": "ecole_des_mines_demo_domain",
-  "display_name": "Digital Health Visit Analytics (Demo)",
-  "description": "Placeholder domain for the École des Mines guest lecture — analyzing care visits by category, region, age group, duration, cost, and patient satisfaction. Will be replaced with the actual domain Prof. Lambert's dataset describes once received.",
-  "temporal_scope": "2025-2026",
-  "population": "Care-visit records (synthetic placeholder)",
+  "id": "rpm_chronic_disease",
+  "display_name": "Remote Patient Monitoring for Chronic Disease",
+  "description": "Use of connected devices + symptom-logging apps + virtual check-ins to monitor patients with chronic conditions (T2D, HTN, CHF, COPD) and trigger care-team intervention on out-of-range readings. Domain studies whether monitoring reduces ER and hospital utilization, which patient segments benefit, and whether the per-patient program cost is justified by avoided utilization.",
+  "temporal_scope": "2025-2026 (pilot window)",
+  "population": "Adult patients with one or more chronic conditions, enrolled in a payer-funded or system-funded RPM program",
   "level_of_analysis": "micro",
   "research_questions": [
-    "How does visit duration vary by care category and region?",
-    "What drives patient satisfaction across age groups?",
-    "How does cost track with visit duration across categories?"
+    "Does RPM enrollment reduce ER visits and hospitalizations vs. the year before enrollment?",
+    "Which patient segments (condition, age, baseline risk) benefit most?",
+    "Does patient engagement (readings, app use, completed care calls) predict outcomes?",
+    "Which clinic sites achieve the strongest outcomes, and what site-level factors explain the variation?",
+    "Does the per-patient program cost pay for itself in avoided utilization?"
   ]
 }

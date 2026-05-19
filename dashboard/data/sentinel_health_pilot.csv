@@ -1,0 +1,251 @@
+patient_id,enrollment_date,days_enrolled,clinic_site,age,gender,primary_condition,baseline_risk_score,device_type,avg_weekly_readings,app_logins_per_month,care_calls_scheduled,care_calls_completed,alerts_triggered,baseline_metric_name,baseline_metric_value,latest_metric_value,er_visits_12mo_pre,er_visits_during_program,hospitalizations_12mo_pre,hospitalizations_during_program,medication_adherence_pct,patient_satisfaction_5pt,monthly_program_cost_usd,total_cost_to_date_usd,status
+P0001,2026-01-01,137,Hilltop Primary Care,62,Male,Type 2 Diabetes,4.8,Glucometer,6.9,14,28,24,7,baseline_a1c,9.8,9.0,0,0,0,1,86,4.4,139.63,637.64,Active
+P0002,2025-10-21,209,Westgate Clinic,68,Male,Hypertension,4.8,BP Monitor,1.9,0,16,14,0,baseline_systolic_bp,164.7,165.0,2,2,0,0,83,3.9,154.2,1074.26,Active
+P0003,2025-10-22,208,Eastfield Community Clinic,56,Female,CHF,5.9,Multi-device,3.6,23,29,24,6,baseline_weight_kg,87.1,83.4,3,2,0,0,83,4.9,130.47,904.59,Active
+P0004,2025-12-20,149,Lakeshore Medical,46,Female,COPD,2.9,Pulse Oximeter,7.5,14,24,22,0,baseline_spo2,91.5,93.5,1,2,0,0,83,5.0,151.69,753.39,Active
+P0005,2025-12-28,141,Cedar Heights Health Center,74,Non-binary,Hypertension,5.5,BP Monitor,6.0,13,14,14,11,baseline_systolic_bp,170.7,171.0,1,1,1,1,68,4.6,146.43,688.22,Active
+P0006,2025-11-18,181,Lakeshore Medical,71,Female,CHF,5.1,Multi-device,5.3,14,25,25,4,baseline_weight_kg,116.8,112.7,3,1,0,1,81,5.0,157.1,947.84,Active
+P0007,2025-10-21,209,Cedar Heights Health Center,73,Male,CHF,7.4,Multi-device,2.6,14,13,10,7,baseline_weight_kg,93.0,94.1,2,1,0,0,74,4.1,152.01,1059.0,Active
+P0008,2025-11-07,192,Lakeshore Medical,68,Female,CHF,6.2,Multi-device,8.3,13,30,29,10,baseline_weight_kg,96.3,92.5,2,1,0,0,96,4.7,153.99,985.54,Active
+P0009,2025-10-17,213,Westgate Clinic,55,Male,Type 2 Diabetes,4.0,Glucometer,5.8,14,20,17,5,baseline_a1c,10.3,10.2,1,1,0,0,77,3.7,141.19,1002.45,Active
+P0010,2025-11-22,177,Riverside Family Clinic,69,Female,COPD,5.2,Pulse Oximeter,8.1,6,30,22,10,baseline_spo2,92.3,94.0,2,1,1,0,81,5.0,155.59,917.98,Active
+P0011,2025-09-01,259,Cedar Heights Health Center,68,Female,Type 2 Diabetes,4.4,Glucometer,3.3,14,23,21,0,baseline_a1c,9.0,8.9,0,0,0,0,74,3.5,160.91,1389.19,Active
+P0012,2025-09-09,251,Eastfield Community Clinic,75,Non-binary,CHF,7.2,Multi-device,6.6,5,36,31,10,baseline_weight_kg,82.1,79.9,3,2,0,0,86,4.9,140.76,1177.69,Active
+P0013,2025-10-23,207,Westgate Clinic,68,Male,Type 2 Diabetes,4.9,Glucometer,4.5,3,22,17,3,baseline_a1c,10.7,10.7,3,3,0,0,77,3.7,149.1,1028.79,Active
+P0014,2025-09-22,238,Hilltop Primary Care,86,Male,Hypertension,7.9,BP Monitor,0.7,0,5,5,7,baseline_systolic_bp,171.8,164.0,4,4,0,0,72,3.7,141.85,1125.34,Withdrew
+P0015,2025-11-28,171,Lakeshore Medical,85,Male,COPD,4.5,Pulse Oximeter,7.3,3,36,33,8,baseline_spo2,89.6,91.4,1,0,0,0,100,4.8,152.53,869.42,Active
+P0016,2025-10-25,205,Eastfield Community Clinic,67,Male,Type 2 Diabetes,5.4,Glucometer,6.9,6,18,16,13,baseline_a1c,8.4,7.5,0,0,0,0,92,3.5,163.45,1116.91,Active
+P0017,2025-12-30,139,Cedar Heights Health Center,76,Female,Type 2 Diabetes,5.5,Glucometer,0,3,10,9,15,baseline_a1c,9.7,9.8,1,0,0,0,68,3.5,135.57,628.14,Active
+P0018,2025-11-26,173,Hilltop Primary Care,63,Male,Hypertension,3.3,BP Monitor,5.2,8,28,23,0,baseline_systolic_bp,157.7,153.0,1,0,0,0,84,3.7,148.35,855.49,Active
+P0019,2025-08-21,270,Cedar Heights Health Center,60,Female,CHF,4.6,Multi-device,8.4,8,29,25,7,baseline_weight_kg,107.3,105.2,0,0,0,0,84,5.0,136.27,1226.43,Active
+P0020,2025-09-15,245,Cedar Heights Health Center,49,Male,CHF,4.8,Multi-device,3.6,3,3,3,14,baseline_weight_kg,102.6,102.9,1,0,0,0,66,3.3,151.47,1237.0,Active
+P0021,2025-09-03,257,Hilltop Primary Care,47,Female,CHF,4.0,Multi-device,4.0,11,25,25,6,baseline_weight_kg,81.9,79.3,1,1,0,1,86,3.7,163.16,1397.74,Completed
+P0022,2025-10-30,200,Lakeshore Medical,51,Male,COPD,3.5,Pulse Oximeter,4.3,26,36,28,0,baseline_spo2,89.3,92.0,1,0,0,0,86,5.0,161.6,1077.33,Active
+P0023,2025-12-02,167,Hilltop Primary Care,51,Female,Type 2 Diabetes,4.0,Glucometer,7.2,22,26,24,0,baseline_a1c,8.8,7.6,1,1,0,0,86,4.8,149.99,834.94,Active
+P0024,2025-08-20,271,Cedar Heights Health Center,64,Female,CHF,2.7,Multi-device,3.3,5,22,16,0,baseline_weight_kg,91.6,90.4,0,0,0,0,82,3.1,136.91,1236.75,Active
+P0025,2025-10-16,214,Westgate Clinic,71,Male,Hypertension,4.5,BP Monitor,6.3,12,15,15,11,baseline_systolic_bp,153.9,150.0,0,0,0,0,71,4.6,168.8,1204.11,Active
+P0026,2025-10-23,207,Cedar Heights Health Center,46,Male,CHF,4.9,Multi-device,0.7,9,10,8,3,baseline_weight_kg,86.0,86.1,2,3,0,0,69,3.4,162.0,1117.8,Active
+P0027,2025-10-24,206,Riverside Family Clinic,63,Male,Hypertension,5.1,BP Monitor,3.9,9,23,20,3,baseline_systolic_bp,159.0,152.0,1,1,0,0,82,4.0,140.13,962.23,Active
+P0028,2025-11-01,198,Eastfield Community Clinic,53,Female,COPD,3.9,Pulse Oximeter,6.9,19,31,26,3,baseline_spo2,89.3,91.0,0,0,0,0,89,4.8,158.1,1043.46,Active
+P0029,2025-09-16,244,Lakeshore Medical,59,Male,Hypertension,7.0,BP Monitor,4.2,19,26,24,3,baseline_systolic_bp,178.6,163.0,2,1,2,0,87,4.9,143.66,1168.43,Active
+P0030,2025-10-11,219,Westgate Clinic,64,Female,Type 2 Diabetes,5.7,Glucometer,2.3,9,16,13,2,baseline_a1c,7.7,7.4,2,1,0,0,78,3.6,165.18,1205.81,Active
+P0031,2025-10-26,204,Eastfield Community Clinic,60,Female,CHF,5.4,Multi-device,4.3,7,22,17,1,baseline_weight_kg,117.0,115.3,0,0,1,1,83,4.8,158.89,1080.45,Active
+P0032,2025-10-23,207,Riverside Family Clinic,77,Male,Type 2 Diabetes,6.5,Glucometer,3.6,4,16,14,6,baseline_a1c,7.8,7.2,4,4,0,0,75,4.0,153.41,1058.53,Disengaged
+P0033,2025-12-18,151,Riverside Family Clinic,70,Male,CHF,5.8,Multi-device,6.3,9,29,28,7,baseline_weight_kg,97.3,93.4,1,0,0,0,91,5.0,163.75,824.21,Completed
+P0034,2025-12-25,144,Cedar Heights Health Center,73,Female,Type 2 Diabetes,3.9,Glucometer,5.1,1,9,9,0,baseline_a1c,9.0,9.1,1,1,0,0,77,3.2,145.22,697.06,Active
+P0035,2025-12-20,149,Westgate Clinic,58,Male,COPD,4.8,Pulse Oximeter,3.8,12,16,14,1,baseline_spo2,88.9,89.6,2,2,1,1,83,3.9,141.33,701.94,Disengaged
+P0036,2025-12-18,151,Eastfield Community Clinic,60,Male,Type 2 Diabetes,1.6,Glucometer,5.6,9,35,27,0,baseline_a1c,10.5,9.0,1,1,0,0,92,4.0,154.49,777.6,Active
+P0037,2025-09-16,244,Westgate Clinic,60,Male,CHF,4.8,Multi-device,2.3,9,4,4,2,baseline_weight_kg,107.5,108.2,0,0,1,1,69,3.0,133.73,1087.67,Active
+P0038,2025-12-17,152,Cedar Heights Health Center,56,Male,COPD,5.2,Pulse Oximeter,4.4,19,27,20,12,baseline_spo2,90.6,91.7,3,1,1,0,68,4.8,156.1,790.91,Active
+P0039,2025-09-27,233,Eastfield Community Clinic,48,Male,Type 2 Diabetes,2.5,Glucometer,8.6,16,35,30,0,baseline_a1c,9.7,8.8,0,0,0,0,96,5.0,162.95,1265.58,Disengaged
+P0040,2025-11-21,178,Eastfield Community Clinic,59,Female,COPD,3.5,Pulse Oximeter,5.9,17,30,27,2,baseline_spo2,93.0,95.1,1,0,0,1,85,4.8,127.31,755.37,Completed
+P0041,2025-10-18,212,Cedar Heights Health Center,66,Female,Type 2 Diabetes,3.5,Glucometer,1.7,3,12,10,8,baseline_a1c,8.6,8.6,0,0,0,0,86,4.0,155.7,1100.28,Active
+P0042,2025-12-16,153,Westgate Clinic,83,Female,Hypertension,4.6,BP Monitor,2.6,8,8,7,12,baseline_systolic_bp,149.0,147.0,0,0,0,0,71,3.1,155.78,794.48,Active
+P0043,2025-11-18,181,Eastfield Community Clinic,63,Male,CHF,6.8,Multi-device,7.4,20,33,27,9,baseline_weight_kg,77.8,74.9,3,2,0,0,100,4.7,163.17,984.46,Active
+P0044,2025-12-31,138,Cedar Heights Health Center,46,Male,Type 2 Diabetes,3.2,Glucometer,4.4,12,15,15,0,baseline_a1c,10.8,10.6,2,3,0,0,71,3.5,136.16,626.34,Withdrew
+P0045,2025-12-09,160,Eastfield Community Clinic,66,Male,Hypertension,4.9,BP Monitor,7.3,5,20,20,0,baseline_systolic_bp,171.5,146.0,2,1,1,1,85,5.0,129.09,688.48,Active
+P0046,2025-09-12,248,Eastfield Community Clinic,78,Male,COPD,6.2,Pulse Oximeter,4.8,12,21,20,5,baseline_spo2,88.3,90.4,2,1,0,0,75,4.8,158.99,1314.32,Completed
+P0047,2025-08-22,269,Lakeshore Medical,73,Female,CHF,5.3,Multi-device,8.5,9,36,34,5,baseline_weight_kg,78.6,74.5,1,1,0,0,92,5.0,149.5,1340.52,Active
+P0048,2026-01-03,135,Hilltop Primary Care,56,Male,Type 2 Diabetes,1.3,Glucometer,4.1,13,22,20,0,baseline_a1c,7.8,7.2,0,0,0,0,81,4.4,145.38,654.21,Active
+P0049,2025-11-07,192,Hilltop Primary Care,49,Male,CHF,3.9,Multi-device,3.4,21,15,13,5,baseline_weight_kg,87.9,86.4,1,1,0,0,81,3.9,162.37,1039.17,Active
+P0050,2026-01-04,134,Eastfield Community Clinic,50,Male,Type 2 Diabetes,3.7,Glucometer,8.4,26,31,29,1,baseline_a1c,8.7,7.8,3,1,0,0,100,5.0,153.8,686.97,Active
+P0051,2026-01-07,131,Eastfield Community Clinic,50,Male,Hypertension,4.4,BP Monitor,2.8,17,22,22,8,baseline_systolic_bp,157.0,146.0,0,0,0,0,82,4.1,135.52,591.77,Active
+P0052,2025-10-08,222,Eastfield Community Clinic,68,Female,Type 2 Diabetes,4.5,Glucometer,3.8,11,31,26,2,baseline_a1c,9.4,8.4,1,0,1,0,93,4.4,155.19,1148.41,Active
+P0053,2025-11-26,173,Eastfield Community Clinic,49,Female,Hypertension,3.9,BP Monitor,7.2,23,31,24,4,baseline_systolic_bp,173.8,159.0,1,1,1,0,95,4.8,156.31,901.39,Active
+P0054,2025-09-21,239,Lakeshore Medical,73,Male,Hypertension,4.3,BP Monitor,7.7,14,36,31,2,baseline_systolic_bp,170.9,156.0,0,0,0,0,86,4.8,137.38,1094.46,Completed
+P0055,2025-10-24,206,Hilltop Primary Care,75,Female,Type 2 Diabetes,5.6,Glucometer,3.1,8,16,16,4,baseline_a1c,9.8,9.3,2,2,0,0,69,4.0,146.54,1006.24,Withdrew
+P0056,2025-12-08,161,Riverside Family Clinic,52,Male,Type 2 Diabetes,2.3,Glucometer,9.2,19,36,32,2,baseline_a1c,9.0,7.8,0,0,0,0,97,4.6,163.76,878.85,Active
+P0057,2025-09-22,238,Hilltop Primary Care,78,Female,Type 2 Diabetes,6.3,Glucometer,5.3,6,22,16,6,baseline_a1c,9.6,9.6,3,4,0,0,67,4.2,132.71,1052.83,Active
+P0058,2025-09-30,230,Riverside Family Clinic,53,Female,CHF,5.3,Multi-device,6.0,20,32,23,7,baseline_weight_kg,110.5,106.9,0,0,0,0,77,4.3,139.07,1066.2,Active
+P0059,2025-08-26,265,Lakeshore Medical,45,Male,CHF,2.3,Multi-device,7.2,19,30,27,1,baseline_weight_kg,99.0,96.9,0,0,0,0,96,5.0,148.7,1313.52,Active
+P0060,2025-09-19,241,Eastfield Community Clinic,85,Male,Hypertension,5.5,BP Monitor,4.2,1,24,18,5,baseline_systolic_bp,145.0,141.0,2,2,0,0,77,5.0,138.21,1110.29,Completed
+P0061,2025-09-04,256,Westgate Clinic,54,Female,Hypertension,4.0,BP Monitor,3.7,17,13,11,5,baseline_systolic_bp,151.5,153.0,2,2,0,0,75,3.8,154.41,1317.63,Disengaged
+P0062,2025-10-31,199,Riverside Family Clinic,58,Female,CHF,5.1,Multi-device,6.9,15,21,21,7,baseline_weight_kg,99.1,97.4,0,0,0,0,86,4.4,146.68,972.98,Active
+P0063,2025-12-22,147,Riverside Family Clinic,78,Male,Hypertension,4.9,BP Monitor,3.2,0,20,15,5,baseline_systolic_bp,171.5,165.0,0,0,1,1,70,4.5,154.15,755.34,Disengaged
+P0064,2025-09-18,242,Lakeshore Medical,45,Male,CHF,4.5,Multi-device,8.8,21,32,32,3,baseline_weight_kg,117.0,112.4,0,0,0,0,90,4.9,166.36,1341.97,Completed
+P0065,2025-11-21,178,Eastfield Community Clinic,46,Male,Type 2 Diabetes,4.5,Glucometer,6.6,16,26,20,4,baseline_a1c,9.0,8.1,0,0,1,1,88,4.5,162.51,964.23,Active
+P0066,2025-12-04,165,Lakeshore Medical,45,Male,Hypertension,3.2,BP Monitor,10.9,22,32,26,0,baseline_systolic_bp,167.2,145.0,1,0,0,0,90,5.0,138.72,762.96,Active
+P0067,2025-09-03,257,Riverside Family Clinic,51,Female,Hypertension,1.0,BP Monitor,3.7,9,21,20,5,baseline_systolic_bp,160.0,147.0,0,0,0,0,86,4.0,176.07,1508.33,Active
+P0068,2025-09-06,254,Lakeshore Medical,39,Female,COPD,3.8,Pulse Oximeter,4.2,30,36,30,0,baseline_spo2,89.8,92.8,2,0,1,0,97,5.0,148.02,1253.24,Active
+P0069,2025-09-17,243,Riverside Family Clinic,51,Non-binary,Hypertension,2.5,BP Monitor,4.9,10,36,32,0,baseline_systolic_bp,172.9,164.0,3,2,0,0,78,4.9,135.51,1097.63,Active
+P0070,2025-09-15,245,Lakeshore Medical,39,Female,COPD,4.2,Pulse Oximeter,6.2,24,33,31,8,baseline_spo2,89.7,92.0,2,0,0,0,82,5.0,159.51,1302.66,Active
+P0071,2026-01-06,132,Riverside Family Clinic,45,Female,Type 2 Diabetes,1.0,Glucometer,8.2,31,36,33,0,baseline_a1c,9.5,8.3,0,0,0,0,88,5.0,171.77,755.79,Active
+P0072,2025-11-10,189,Riverside Family Clinic,70,Female,CHF,7.2,Multi-device,4.1,7,20,15,10,baseline_weight_kg,91.7,89.8,1,1,0,0,84,4.2,161.44,1017.07,Active
+P0073,2025-11-03,196,Eastfield Community Clinic,69,Male,COPD,6.5,Pulse Oximeter,7.2,16,33,25,4,baseline_spo2,90.4,92.7,1,0,1,0,95,5.0,135.04,882.26,Active
+P0074,2025-11-26,173,Lakeshore Medical,70,Female,Type 2 Diabetes,5.4,Glucometer,7.7,9,30,25,9,baseline_a1c,10.2,9.0,1,0,2,1,87,5.0,139.51,804.51,Completed
+P0075,2025-09-19,241,Hilltop Primary Care,49,Female,Type 2 Diabetes,2.8,Glucometer,2.2,12,25,19,8,baseline_a1c,8.6,7.6,0,0,0,0,80,3.7,150.98,1212.87,Active
+P0076,2025-08-21,270,Lakeshore Medical,73,Female,Hypertension,5.7,BP Monitor,5.5,5,22,18,5,baseline_systolic_bp,159.2,143.0,0,0,0,0,83,4.4,141.79,1276.11,Active
+P0077,2025-12-13,156,Riverside Family Clinic,57,Female,Hypertension,4.0,BP Monitor,4.9,22,29,27,0,baseline_systolic_bp,161.0,142.0,1,0,0,0,97,4.7,133.06,691.91,Active
+P0078,2025-10-30,200,Hilltop Primary Care,64,Female,Type 2 Diabetes,5.7,Glucometer,3.1,8,21,18,0,baseline_a1c,10.0,9.6,1,1,1,1,87,4.4,143.32,955.47,Active
+P0079,2025-10-08,222,Westgate Clinic,79,Male,Type 2 Diabetes,4.6,Glucometer,4.7,8,9,9,2,baseline_a1c,8.3,8.6,0,0,0,0,77,3.9,162.16,1199.98,Active
+P0080,2025-12-15,154,Riverside Family Clinic,40,Male,COPD,4.7,Pulse Oximeter,2.6,13,21,21,5,baseline_spo2,89.4,89.7,1,0,0,0,86,4.4,148.68,763.22,Active
+P0081,2025-08-24,267,Cedar Heights Health Center,63,Female,Type 2 Diabetes,1.6,Glucometer,5.9,19,31,28,6,baseline_a1c,9.2,8.6,2,2,0,0,87,4.1,152.36,1356.0,Active
+P0082,2025-11-26,173,Hilltop Primary Care,45,Female,CHF,3.2,Multi-device,4.1,23,26,25,5,baseline_weight_kg,86.2,83.3,1,0,0,0,94,5.0,151.25,872.21,Active
+P0083,2025-11-02,197,Lakeshore Medical,59,Female,Type 2 Diabetes,4.9,Glucometer,4.7,24,27,25,8,baseline_a1c,9.1,8.1,2,0,0,0,78,5.0,131.92,866.27,Active
+P0084,2026-01-06,132,Riverside Family Clinic,49,Female,CHF,4.2,Multi-device,8.8,23,31,26,7,baseline_weight_kg,94.9,90.0,0,0,0,0,91,5.0,159.17,700.35,Active
+P0085,2025-08-15,276,Riverside Family Clinic,63,Female,CHF,5.8,Multi-device,3.6,13,23,23,15,baseline_weight_kg,78.1,75.8,2,2,0,0,67,4.2,140.06,1288.55,Disengaged
+P0086,2025-12-31,138,Eastfield Community Clinic,73,Male,COPD,5.3,Pulse Oximeter,9.3,22,36,34,12,baseline_spo2,93.0,97.1,2,1,0,0,93,5.0,163.23,750.86,Active
+P0087,2025-08-19,272,Lakeshore Medical,64,Male,COPD,4.9,Pulse Oximeter,7.8,9,34,27,6,baseline_spo2,88.3,90.8,0,0,0,1,100,5.0,176.6,1601.17,Active
+P0088,2025-12-26,143,Riverside Family Clinic,67,Male,CHF,5.1,Multi-device,7.0,19,33,25,10,baseline_weight_kg,94.2,92.5,0,0,0,0,80,4.3,153.42,731.3,Active
+P0089,2025-12-11,158,Hilltop Primary Care,69,Male,Hypertension,3.8,BP Monitor,5.3,16,25,24,3,baseline_systolic_bp,165.9,151.0,3,1,0,0,91,4.3,135.53,713.79,Completed
+P0090,2025-11-08,191,Lakeshore Medical,61,Female,CHF,3.9,Multi-device,9.6,12,35,27,3,baseline_weight_kg,116.1,114.3,0,0,0,0,92,4.5,153.65,978.24,Active
+P0091,2025-11-04,195,Eastfield Community Clinic,42,Male,COPD,3.8,Pulse Oximeter,6.2,17,31,29,4,baseline_spo2,93.6,96.6,0,0,0,0,98,4.4,150.08,975.52,Active
+P0092,2025-09-27,233,Eastfield Community Clinic,80,Female,CHF,6.6,Multi-device,3.5,8,23,22,16,baseline_weight_kg,118.1,117.9,0,0,0,0,81,4.8,162.88,1265.03,Active
+P0093,2025-12-16,153,Lakeshore Medical,59,Male,Type 2 Diabetes,3.9,Glucometer,6.9,18,27,27,2,baseline_a1c,8.5,7.7,0,0,0,0,100,4.9,148.64,758.06,Active
+P0094,2025-12-10,159,Eastfield Community Clinic,65,Male,Hypertension,3.8,BP Monitor,1.7,7,24,18,0,baseline_systolic_bp,170.4,172.0,2,1,0,0,75,3.6,150.01,795.05,Disengaged
+P0095,2025-10-08,222,Riverside Family Clinic,76,Female,COPD,7.0,Pulse Oximeter,4.7,3,31,23,6,baseline_spo2,91.3,92.7,2,1,0,0,89,4.9,129.9,961.26,Completed
+P0096,2025-12-31,138,Eastfield Community Clinic,42,Male,Hypertension,1.4,BP Monitor,7.6,24,36,28,0,baseline_systolic_bp,142.1,131.0,0,1,0,0,81,4.6,147.09,676.61,Active
+P0097,2026-01-11,127,Westgate Clinic,46,Female,Hypertension,4.9,BP Monitor,2.8,5,11,9,8,baseline_systolic_bp,168.5,167.0,0,0,0,0,74,3.3,157.33,666.03,Active
+P0098,2025-11-13,186,Lakeshore Medical,52,Female,Hypertension,2.8,BP Monitor,5.3,20,18,18,0,baseline_systolic_bp,169.0,151.0,0,0,0,0,82,4.9,159.42,988.4,Active
+P0099,2025-10-17,213,Lakeshore Medical,57,Female,Type 2 Diabetes,5.6,Glucometer,5.3,18,26,25,9,baseline_a1c,10.4,9.2,0,0,1,1,82,4.9,144.33,1024.74,Active
+P0100,2025-12-18,151,Hilltop Primary Care,69,Female,Hypertension,5.7,BP Monitor,6.3,11,36,29,0,baseline_systolic_bp,148.0,127.0,2,1,0,0,75,4.9,170.77,859.54,Active
+P0101,2025-10-31,199,Lakeshore Medical,69,Female,COPD,3.9,Pulse Oximeter,9.5,12,23,23,7,baseline_spo2,90.4,93.3,0,0,0,0,86,5.0,140.91,934.7,Active
+P0102,2025-08-26,265,Lakeshore Medical,57,Male,CHF,4.1,Multi-device,5.1,12,19,17,4,baseline_weight_kg,79.4,76.7,1,0,1,1,91,4.3,154.16,1361.75,Active
+P0103,2025-09-05,255,Lakeshore Medical,54,Male,COPD,4.4,Pulse Oximeter,10.2,26,36,33,4,baseline_spo2,90.9,95.0,0,0,0,0,91,5.0,135.92,1155.32,Active
+P0104,2026-01-05,133,Lakeshore Medical,64,Female,COPD,5.9,Pulse Oximeter,7.0,13,21,20,3,baseline_spo2,92.4,94.3,3,1,0,0,92,4.8,129.5,574.12,Active
+P0105,2025-12-18,151,Cedar Heights Health Center,58,Female,Hypertension,4.3,BP Monitor,2.8,5,12,10,1,baseline_systolic_bp,164.7,155.0,2,2,0,0,75,4.0,156.91,789.78,Active
+P0106,2025-10-01,229,Hilltop Primary Care,58,Female,Hypertension,4.0,BP Monitor,4.2,20,12,12,6,baseline_systolic_bp,147.5,139.0,2,0,0,0,77,3.6,160.27,1223.39,Active
+P0107,2026-01-06,132,Eastfield Community Clinic,60,Female,Hypertension,2.6,BP Monitor,8.2,13,36,33,3,baseline_systolic_bp,169.7,148.0,0,0,0,0,82,4.6,166.57,732.91,Active
+P0108,2025-10-17,213,Hilltop Primary Care,69,Male,Hypertension,4.5,BP Monitor,9.6,4,22,17,0,baseline_systolic_bp,171.0,160.0,1,1,1,1,69,4.1,155.68,1105.33,Active
+P0109,2025-11-05,194,Lakeshore Medical,58,Male,Type 2 Diabetes,4.5,Glucometer,7.7,15,33,28,9,baseline_a1c,8.0,7.0,1,0,0,0,86,5.0,155.0,1002.33,Active
+P0110,2025-11-29,170,Eastfield Community Clinic,58,Male,COPD,5.1,Pulse Oximeter,6.3,20,20,18,5,baseline_spo2,93.3,94.2,0,0,0,0,83,5.0,147.03,833.17,Active
+P0111,2025-12-19,150,Cedar Heights Health Center,38,Male,CHF,5.4,Multi-device,7.1,10,24,20,2,baseline_weight_kg,105.7,104.4,2,1,0,0,87,4.0,150.16,750.8,Withdrew
+P0112,2025-10-24,206,Lakeshore Medical,75,Female,CHF,7.9,Multi-device,8.1,13,36,31,13,baseline_weight_kg,107.7,103.2,3,1,0,0,94,4.8,141.93,974.59,Active
+P0113,2025-12-15,154,Lakeshore Medical,81,Male,Hypertension,7.2,BP Monitor,7.4,7,28,25,8,baseline_systolic_bp,170.9,156.0,2,0,0,0,89,4.8,139.54,716.31,Active
+P0114,2025-09-06,254,Hilltop Primary Care,48,Male,Type 2 Diabetes,3.8,Glucometer,5.1,22,28,25,0,baseline_a1c,8.4,7.5,0,0,0,0,98,5.0,153.9,1303.02,Completed
+P0115,2025-10-15,215,Lakeshore Medical,68,Male,Hypertension,5.6,BP Monitor,6.8,7,31,26,17,baseline_systolic_bp,177.4,163.0,3,1,1,0,80,5.0,144.19,1033.36,Active
+P0116,2025-12-22,147,Lakeshore Medical,68,Male,Type 2 Diabetes,4.6,Glucometer,9.2,13,27,24,0,baseline_a1c,8.0,7.2,2,0,0,0,94,4.5,139.47,683.4,Active
+P0117,2025-10-16,214,Hilltop Primary Care,36,Female,Type 2 Diabetes,3.0,Glucometer,6.9,13,28,25,2,baseline_a1c,7.9,7.7,0,1,0,0,85,4.5,142.87,1019.14,Active
+P0118,2025-12-02,167,Cedar Heights Health Center,79,Female,Type 2 Diabetes,4.1,Glucometer,4.0,2,9,9,1,baseline_a1c,9.2,8.9,0,0,0,0,70,3.8,164.18,913.94,Active
+P0119,2025-08-24,267,Cedar Heights Health Center,52,Female,Type 2 Diabetes,3.4,Glucometer,1.5,7,7,7,0,baseline_a1c,8.4,8.1,2,3,0,0,80,4.5,146.53,1304.12,Disengaged
+P0120,2025-08-17,274,Riverside Family Clinic,69,Male,Type 2 Diabetes,3.7,Glucometer,6.0,10,16,15,0,baseline_a1c,11.0,9.8,1,1,0,0,93,4.9,152.24,1390.46,Active
+P0121,2025-11-01,198,Hilltop Primary Care,53,Female,Type 2 Diabetes,5.0,Glucometer,7.3,19,28,28,11,baseline_a1c,7.8,7.1,4,3,0,0,98,4.7,152.74,1008.08,Active
+P0122,2025-10-14,216,Cedar Heights Health Center,52,Male,Type 2 Diabetes,2.6,Glucometer,6.9,16,18,14,1,baseline_a1c,8.3,7.7,1,1,0,0,81,3.8,155.6,1120.32,Active
+P0123,2025-10-31,199,Cedar Heights Health Center,41,Female,Hypertension,2.8,BP Monitor,3.2,23,24,22,5,baseline_systolic_bp,154.2,144.0,0,1,0,0,84,3.6,155.89,1034.07,Active
+P0124,2025-10-10,220,Riverside Family Clinic,65,Male,CHF,5.9,Multi-device,8.9,8,36,30,2,baseline_weight_kg,111.6,108.9,2,0,0,0,99,5.0,140.54,1030.63,Active
+P0125,2025-08-22,269,Riverside Family Clinic,44,Female,Type 2 Diabetes,1.5,Glucometer,5.9,9,26,24,0,baseline_a1c,9.6,9.0,0,0,0,0,81,4.0,158.39,1420.23,Active
+P0126,2025-11-20,179,Cedar Heights Health Center,79,Female,Type 2 Diabetes,5.4,Glucometer,2.3,0,17,13,2,baseline_a1c,8.1,7.9,1,0,1,1,82,3.1,146.23,872.51,Withdrew
+P0127,2025-08-29,262,Westgate Clinic,58,Male,Type 2 Diabetes,2.9,Glucometer,0.2,1,12,11,14,baseline_a1c,8.1,8.4,1,1,0,0,71,3.3,162.47,1418.9,Active
+P0128,2025-09-28,232,Westgate Clinic,75,Male,CHF,3.6,Multi-device,2.6,3,14,12,13,baseline_weight_kg,84.1,84.5,2,1,0,0,72,2.5,136.13,1052.74,Withdrew
+P0129,2025-11-24,175,Cedar Heights Health Center,75,Male,COPD,5.8,Pulse Oximeter,2.5,0,25,20,2,baseline_spo2,90.9,91.7,1,1,1,1,70,3.3,131.0,764.17,Active
+P0130,2026-01-08,130,Hilltop Primary Care,64,Male,Type 2 Diabetes,4.2,Glucometer,5.8,6,13,11,14,baseline_a1c,8.3,8.5,0,1,0,0,89,4.1,171.72,744.12,Active
+P0131,2025-10-17,213,Hilltop Primary Care,73,Female,CHF,5.6,Multi-device,3.2,9,13,13,2,baseline_weight_kg,82.5,80.6,0,0,1,1,70,3.5,140.48,997.41,Active
+P0132,2025-09-10,250,Riverside Family Clinic,66,Female,CHF,5.9,Multi-device,6.5,6,32,27,7,baseline_weight_kg,101.7,99.3,1,0,0,0,97,4.7,154.63,1288.58,Active
+P0133,2025-10-26,204,Lakeshore Medical,60,Female,CHF,3.4,Multi-device,7.7,9,35,30,2,baseline_weight_kg,78.9,75.0,1,0,0,0,99,5.0,148.05,1006.74,Active
+P0134,2025-11-22,177,Cedar Heights Health Center,71,Male,Hypertension,4.2,BP Monitor,8.1,6,25,23,1,baseline_systolic_bp,150.7,142.0,3,2,0,0,89,4.7,147.07,867.71,Active
+P0135,2025-12-14,155,Cedar Heights Health Center,51,Male,CHF,5.3,Multi-device,3.4,11,24,18,11,baseline_weight_kg,98.3,97.1,0,1,0,0,81,4.0,157.18,812.1,Active
+P0136,2025-09-21,239,Lakeshore Medical,60,Male,Type 2 Diabetes,3.1,Glucometer,6.6,21,26,26,0,baseline_a1c,8.6,7.2,0,0,0,0,88,4.9,156.01,1242.88,Active
+P0137,2025-09-09,251,Riverside Family Clinic,89,Male,CHF,6.7,Multi-device,0.8,10,11,10,5,baseline_weight_kg,96.3,96.1,3,2,1,1,79,4.5,137.33,1148.99,Active
+P0138,2025-11-02,197,Riverside Family Clinic,56,Male,Type 2 Diabetes,4.3,Glucometer,7.1,16,26,20,11,baseline_a1c,9.1,7.8,1,1,0,0,87,4.7,132.37,869.23,Active
+P0139,2025-12-22,147,Cedar Heights Health Center,56,Female,CHF,4.9,Multi-device,4.7,4,12,12,8,baseline_weight_kg,77.6,77.6,2,2,0,0,78,3.0,166.39,815.31,Active
+P0140,2026-01-03,135,Eastfield Community Clinic,35,Female,Hypertension,2.8,BP Monitor,6.5,23,25,20,1,baseline_systolic_bp,146.5,130.0,0,0,0,0,81,4.6,151.3,680.85,Active
+P0141,2025-08-17,274,Cedar Heights Health Center,78,Male,Type 2 Diabetes,4.4,Glucometer,5.8,10,16,13,4,baseline_a1c,10.5,9.6,0,0,0,0,71,5.0,152.14,1389.55,Withdrew
+P0142,2025-12-16,153,Cedar Heights Health Center,55,Male,Hypertension,2.9,BP Monitor,8.9,17,26,24,0,baseline_systolic_bp,152.0,148.0,2,0,0,0,83,4.4,134.66,686.77,Active
+P0143,2025-08-24,267,Hilltop Primary Care,63,Female,COPD,6.3,Pulse Oximeter,0.1,6,8,7,6,baseline_spo2,90.9,90.1,3,3,0,0,64,3.5,163.03,1450.97,Withdrew
+P0144,2025-09-06,254,Hilltop Primary Care,88,Male,Hypertension,4.6,BP Monitor,4.2,6,13,10,2,baseline_systolic_bp,158.6,151.0,1,1,0,0,69,3.9,155.7,1318.26,Active
+P0145,2025-11-10,189,Riverside Family Clinic,68,Non-binary,Hypertension,4.0,BP Monitor,5.6,12,18,16,3,baseline_systolic_bp,159.5,159.0,0,0,0,0,89,4.6,167.8,1057.14,Active
+P0146,2025-12-15,154,Cedar Heights Health Center,51,Female,Type 2 Diabetes,2.0,Glucometer,4.6,14,20,20,0,baseline_a1c,8.2,7.3,0,1,0,0,81,3.6,160.69,824.88,Active
+P0147,2025-11-09,190,Cedar Heights Health Center,59,Male,Type 2 Diabetes,5.6,Glucometer,4.1,18,23,20,7,baseline_a1c,10.7,10.7,2,3,0,0,75,3.5,149.82,948.86,Disengaged
+P0148,2025-08-27,264,Cedar Heights Health Center,50,Male,Hypertension,1.4,BP Monitor,2.0,18,17,15,0,baseline_systolic_bp,159.0,151.0,1,1,0,0,69,3.8,166.24,1462.91,Active
+P0149,2025-09-11,249,Cedar Heights Health Center,62,Female,Type 2 Diabetes,3.4,Glucometer,3.3,7,9,7,1,baseline_a1c,8.1,7.7,0,0,0,0,75,3.9,153.08,1270.56,Active
+P0150,2025-10-19,211,Riverside Family Clinic,64,Male,COPD,4.7,Pulse Oximeter,3.6,12,19,19,8,baseline_spo2,93.1,93.2,0,0,1,1,71,4.6,150.4,1057.81,Active
+P0151,2025-11-18,181,Eastfield Community Clinic,73,Male,COPD,5.7,Pulse Oximeter,5.2,3,31,28,0,baseline_spo2,92.8,95.9,0,0,0,1,91,4.9,160.48,968.23,Active
+P0152,2025-08-22,269,Cedar Heights Health Center,68,Female,CHF,7.1,Multi-device,3.5,9,20,17,0,baseline_weight_kg,94.8,92.5,4,1,1,0,84,4.3,141.57,1269.41,Disengaged
+P0153,2025-10-17,213,Cedar Heights Health Center,57,Female,Hypertension,2.0,BP Monitor,3.4,8,14,11,7,baseline_systolic_bp,140.5,142.0,1,1,0,0,82,3.5,159.72,1134.01,Active
+P0154,2025-12-06,163,Riverside Family Clinic,48,Female,Hypertension,4.4,BP Monitor,4.4,21,21,21,0,baseline_systolic_bp,144.1,132.0,0,0,0,0,80,4.4,163.47,888.19,Active
+P0155,2025-12-09,160,Hilltop Primary Care,61,Female,COPD,5.2,Pulse Oximeter,6.6,3,16,14,4,baseline_spo2,92.0,93.2,3,2,0,0,77,4.8,165.84,884.48,Active
+P0156,2025-09-14,246,Cedar Heights Health Center,56,Female,CHF,5.5,Multi-device,4.8,10,29,23,9,baseline_weight_kg,116.7,114.2,2,1,0,0,71,4.6,160.56,1316.59,Active
+P0157,2025-09-29,231,Lakeshore Medical,71,Female,COPD,4.6,Pulse Oximeter,6.0,13,32,26,1,baseline_spo2,93.3,95.7,0,0,0,0,93,4.9,170.86,1315.62,Active
+P0158,2025-11-03,196,Hilltop Primary Care,40,Male,COPD,3.0,Pulse Oximeter,1.3,12,21,17,2,baseline_spo2,92.0,93.9,2,1,0,0,75,4.4,157.42,1028.48,Active
+P0159,2025-10-27,203,Riverside Family Clinic,46,Male,CHF,5.2,Multi-device,5.2,21,28,25,6,baseline_weight_kg,87.0,84.1,2,1,0,0,91,4.8,164.36,1112.17,Active
+P0160,2026-01-05,133,Riverside Family Clinic,57,Female,Hypertension,2.2,BP Monitor,5.9,16,17,14,6,baseline_systolic_bp,156.7,147.0,1,1,0,0,76,4.8,132.52,587.51,Active
+P0161,2025-10-04,226,Eastfield Community Clinic,61,Male,CHF,4.3,Multi-device,2.7,11,35,28,4,baseline_weight_kg,98.1,94.4,0,0,0,0,86,4.5,166.51,1254.38,Active
+P0162,2025-10-31,199,Lakeshore Medical,90,Male,Hypertension,7.2,BP Monitor,3.7,0,20,18,9,baseline_systolic_bp,142.7,132.0,1,1,1,1,79,4.1,159.88,1060.54,Active
+P0163,2025-08-17,274,Hilltop Primary Care,86,Non-binary,Hypertension,6.0,BP Monitor,4.9,4,27,20,7,baseline_systolic_bp,175.4,169.0,0,0,1,1,75,3.3,147.82,1350.09,Active
+P0164,2025-09-05,255,Riverside Family Clinic,58,Female,Hypertension,5.3,BP Monitor,5.9,24,23,23,10,baseline_systolic_bp,170.9,156.0,2,1,0,0,71,4.7,132.91,1129.73,Completed
+P0165,2025-08-28,263,Hilltop Primary Care,53,Female,Type 2 Diabetes,3.5,Glucometer,6.5,23,32,24,0,baseline_a1c,8.9,8.1,0,0,0,0,82,4.4,146.34,1282.91,Active
+P0166,2025-10-26,204,Eastfield Community Clinic,59,Male,Hypertension,5.5,BP Monitor,4.7,14,32,27,3,baseline_systolic_bp,155.6,143.0,2,1,0,0,75,4.9,131.37,893.32,Active
+P0167,2025-11-23,176,Westgate Clinic,58,Female,Hypertension,3.5,BP Monitor,0.5,1,13,10,3,baseline_systolic_bp,165.8,167.0,0,1,0,0,69,3.2,127.67,749.0,Active
+P0168,2025-09-01,259,Westgate Clinic,49,Female,COPD,4.3,Pulse Oximeter,4.6,2,11,10,3,baseline_spo2,89.7,89.4,2,2,0,0,67,3.8,162.69,1404.56,Disengaged
+P0169,2025-12-04,165,Westgate Clinic,55,Male,Type 2 Diabetes,5.4,Glucometer,4.8,9,13,11,0,baseline_a1c,9.2,9.0,3,3,1,1,63,3.7,168.42,926.31,Active
+P0170,2026-01-10,128,Hilltop Primary Care,73,Male,COPD,4.5,Pulse Oximeter,4.9,11,15,13,10,baseline_spo2,92.7,93.5,1,0,0,0,83,3.5,149.21,636.63,Active
+P0171,2025-12-24,145,Hilltop Primary Care,69,Female,COPD,4.0,Pulse Oximeter,6.2,5,26,20,7,baseline_spo2,93.6,96.2,3,2,0,0,93,3.7,147.62,713.5,Active
+P0172,2025-12-26,143,Westgate Clinic,80,Female,COPD,6.9,Pulse Oximeter,1.0,1,3,3,6,baseline_spo2,91.5,91.4,2,3,0,0,74,3.3,139.93,667.0,Withdrew
+P0173,2025-12-24,145,Cedar Heights Health Center,73,Female,Type 2 Diabetes,4.0,Glucometer,3.0,8,21,17,7,baseline_a1c,10.3,9.9,1,1,0,0,86,4.0,150.5,727.42,Active
+P0174,2025-10-20,210,Lakeshore Medical,79,Female,CHF,7.3,Multi-device,6.3,0,36,33,11,baseline_weight_kg,112.0,109.2,3,1,1,0,91,5.0,153.54,1074.78,Active
+P0175,2025-12-09,160,Cedar Heights Health Center,56,Male,CHF,5.0,Multi-device,3.9,11,18,18,0,baseline_weight_kg,105.8,105.0,2,2,0,0,71,3.3,146.07,779.04,Active
+P0176,2025-12-03,166,Hilltop Primary Care,63,Male,COPD,5.1,Pulse Oximeter,4.1,12,19,18,8,baseline_spo2,90.3,90.1,0,0,0,0,80,3.8,151.25,836.92,Disengaged
+P0177,2025-08-16,275,Eastfield Community Clinic,57,Male,COPD,5.0,Pulse Oximeter,5.4,23,29,23,3,baseline_spo2,88.9,91.5,1,0,0,0,88,4.4,131.76,1207.8,Active
+P0178,2025-11-01,198,Cedar Heights Health Center,53,Female,Hypertension,4.4,BP Monitor,1.9,7,17,13,7,baseline_systolic_bp,171.3,167.0,2,2,0,0,65,3.6,146.4,966.24,Active
+P0179,2025-09-06,254,Hilltop Primary Care,70,Male,CHF,5.0,Multi-device,6.2,11,26,23,10,baseline_weight_kg,98.4,96.2,1,0,0,0,80,4.6,166.75,1411.82,Active
+P0180,2025-09-27,233,Eastfield Community Clinic,52,Female,Type 2 Diabetes,2.3,Glucometer,4.5,11,16,16,1,baseline_a1c,9.8,8.7,0,0,0,0,81,4.6,134.81,1047.02,Active
+P0181,2025-11-26,173,Eastfield Community Clinic,68,Female,CHF,9.0,Multi-device,5.0,8,22,22,7,baseline_weight_kg,111.1,106.3,5,2,1,0,69,3.9,142.05,819.16,Active
+P0182,2025-09-13,247,Westgate Clinic,48,Female,Hypertension,3.2,BP Monitor,5.0,11,15,12,5,baseline_systolic_bp,154.1,158.0,0,0,0,0,81,3.3,162.78,1340.22,Active
+P0183,2025-10-02,228,Eastfield Community Clinic,57,Male,Type 2 Diabetes,3.2,Glucometer,5.5,16,17,16,3,baseline_a1c,9.7,8.7,1,0,0,0,77,4.6,135.07,1026.53,Active
+P0184,2025-10-24,206,Riverside Family Clinic,29,Male,CHF,2.9,Multi-device,3.1,11,10,10,2,baseline_weight_kg,111.0,110.5,0,0,0,0,68,4.4,147.27,1011.25,Active
+P0185,2025-10-20,210,Hilltop Primary Care,67,Female,Type 2 Diabetes,6.0,Glucometer,6.6,9,32,29,8,baseline_a1c,9.0,8.1,2,2,0,0,76,4.1,129.74,908.18,Active
+P0186,2025-09-22,238,Cedar Heights Health Center,68,Male,Hypertension,3.9,BP Monitor,4.5,6,24,18,1,baseline_systolic_bp,152.6,151.0,0,0,0,0,81,4.1,158.98,1261.24,Active
+P0187,2025-10-19,211,Lakeshore Medical,63,Male,CHF,6.7,Multi-device,7.9,8,36,30,1,baseline_weight_kg,99.2,96.3,3,2,0,0,82,5.0,157.83,1110.07,Active
+P0188,2026-01-08,130,Westgate Clinic,46,Female,COPD,1.5,Pulse Oximeter,3.7,9,9,8,0,baseline_spo2,91.6,90.4,0,0,0,0,60,2.9,152.23,659.66,Active
+P0189,2025-10-07,223,Lakeshore Medical,63,Male,Type 2 Diabetes,6.1,Glucometer,8.0,21,36,32,9,baseline_a1c,10.2,8.9,3,1,1,0,89,5.0,159.81,1187.92,Active
+P0190,2025-11-06,193,Lakeshore Medical,81,Male,CHF,7.4,Multi-device,5.3,13,25,21,14,baseline_weight_kg,99.3,93.9,1,0,0,0,92,4.2,144.47,929.42,Active
+P0191,2025-08-17,274,Eastfield Community Clinic,59,Female,Type 2 Diabetes,4.9,Glucometer,7.8,26,34,29,12,baseline_a1c,10.8,9.6,1,1,0,0,95,4.9,158.82,1450.56,Active
+P0192,2025-10-21,209,Eastfield Community Clinic,63,Female,Type 2 Diabetes,2.9,Glucometer,8.3,6,34,28,0,baseline_a1c,9.8,8.9,0,0,0,0,94,4.6,153.65,1070.43,Active
+P0193,2025-09-10,250,Riverside Family Clinic,82,Female,Hypertension,8.3,BP Monitor,4.8,3,16,16,12,baseline_systolic_bp,156.8,150.0,3,3,0,0,78,4.1,143.26,1193.83,Active
+P0194,2025-11-20,179,Eastfield Community Clinic,74,Female,Hypertension,7.3,BP Monitor,5.2,11,27,21,1,baseline_systolic_bp,141.3,126.0,0,0,1,1,87,4.5,159.8,953.47,Active
+P0195,2025-10-04,226,Lakeshore Medical,54,Male,COPD,4.2,Pulse Oximeter,7.4,16,22,21,2,baseline_spo2,92.8,95.7,0,1,0,0,86,5.0,143.55,1081.41,Active
+P0196,2025-08-30,261,Eastfield Community Clinic,59,Male,Hypertension,2.7,BP Monitor,8.2,21,25,24,2,baseline_systolic_bp,171.5,146.0,0,0,0,0,87,5.0,169.23,1472.3,Active
+P0197,2025-11-12,187,Riverside Family Clinic,61,Female,Type 2 Diabetes,3.2,Glucometer,6.6,13,22,17,5,baseline_a1c,9.1,8.2,1,1,0,0,82,4.8,138.8,865.19,Active
+P0198,2025-10-02,228,Hilltop Primary Care,92,Male,Hypertension,7.7,BP Monitor,1.2,0,4,4,9,baseline_systolic_bp,160.9,164.0,4,3,1,1,72,3.8,159.08,1209.01,Active
+P0199,2025-09-02,258,Hilltop Primary Care,61,Female,Hypertension,3.0,BP Monitor,7.6,8,30,23,0,baseline_systolic_bp,154.4,139.0,0,0,0,0,95,4.2,146.46,1259.56,Active
+P0200,2025-11-21,178,Lakeshore Medical,58,Female,Type 2 Diabetes,3.6,Glucometer,9.3,23,36,34,2,baseline_a1c,7.9,7.0,0,0,0,0,90,5.0,161.02,955.39,Active
+P0201,2025-11-06,193,Lakeshore Medical,53,Female,COPD,4.6,Pulse Oximeter,6.5,19,29,26,3,baseline_spo2,90.3,94.4,0,0,0,0,93,5.0,152.12,978.64,Active
+P0202,2025-11-03,196,Lakeshore Medical,92,Female,COPD,7.6,Pulse Oximeter,6.7,5,28,23,0,baseline_spo2,88.9,90.9,3,1,1,0,85,5.0,145.11,948.05,Active
+P0203,2026-01-09,129,Westgate Clinic,60,Female,CHF,3.2,Multi-device,3.2,6,18,14,0,baseline_weight_kg,116.5,115.0,0,0,1,2,83,3.6,126.65,544.6,Withdrew
+P0204,2026-01-06,132,Hilltop Primary Care,77,Female,CHF,7.2,Multi-device,6.5,5,27,21,4,baseline_weight_kg,101.8,99.3,1,1,1,1,83,4.1,148.34,652.7,Active
+P0205,2026-01-05,133,Lakeshore Medical,64,Female,Hypertension,3.5,BP Monitor,8.9,9,36,28,0,baseline_systolic_bp,150.7,133.0,0,0,0,0,95,5.0,160.27,710.53,Active
+P0206,2025-09-21,239,Cedar Heights Health Center,50,Male,Type 2 Diabetes,4.8,Glucometer,3.8,8,14,14,6,baseline_a1c,10.1,10.2,1,1,1,1,76,3.6,140.35,1118.12,Disengaged
+P0207,2026-01-02,136,Eastfield Community Clinic,67,Male,CHF,7.4,Multi-device,4.9,12,22,22,3,baseline_weight_kg,77.0,75.8,3,1,1,1,83,4.8,150.62,682.81,Active
+P0208,2025-11-21,178,Cedar Heights Health Center,65,Male,CHF,5.6,Multi-device,6.1,10,20,18,9,baseline_weight_kg,83.4,82.9,0,0,0,0,87,3.9,160.38,951.59,Active
+P0209,2025-12-21,148,Eastfield Community Clinic,57,Male,Hypertension,3.0,BP Monitor,6.6,18,36,27,12,baseline_systolic_bp,178.0,166.0,1,1,0,0,79,4.4,128.09,631.91,Active
+P0210,2025-12-07,162,Eastfield Community Clinic,54,Male,Hypertension,3.8,BP Monitor,5.3,20,31,24,6,baseline_systolic_bp,168.2,160.0,0,0,0,0,95,4.9,144.78,781.81,Active
+P0211,2025-11-04,195,Westgate Clinic,53,Male,Type 2 Diabetes,5.5,Glucometer,3.3,9,26,19,13,baseline_a1c,8.5,8.7,2,2,0,0,75,3.5,146.44,951.86,Active
+P0212,2025-12-13,156,Hilltop Primary Care,58,Female,Hypertension,2.4,BP Monitor,3.6,18,17,17,2,baseline_systolic_bp,170.6,161.0,1,1,0,1,81,5.0,161.09,837.67,Disengaged
+P0213,2025-11-26,173,Cedar Heights Health Center,57,Female,Hypertension,4.8,BP Monitor,2.8,17,16,14,10,baseline_systolic_bp,161.4,157.0,0,0,0,0,84,4.3,143.74,828.9,Active
+P0214,2025-10-02,228,Westgate Clinic,48,Male,Type 2 Diabetes,4.2,Glucometer,4.8,7,21,18,0,baseline_a1c,7.7,7.5,0,0,0,0,71,3.6,122.17,928.49,Active
+P0215,2025-10-05,225,Lakeshore Medical,56,Male,Hypertension,3.7,BP Monitor,7.1,20,36,33,6,baseline_systolic_bp,143.6,119.0,0,0,0,0,76,5.0,145.41,1090.58,Active
+P0216,2025-09-25,235,Lakeshore Medical,51,Male,Type 2 Diabetes,5.2,Glucometer,6.9,22,30,27,4,baseline_a1c,9.7,8.8,2,1,0,0,99,5.0,138.15,1082.17,Active
+P0217,2025-09-04,256,Cedar Heights Health Center,52,Female,Type 2 Diabetes,2.4,Glucometer,4.4,16,20,16,3,baseline_a1c,8.1,7.9,1,1,0,0,75,3.9,154.49,1318.31,Active
+P0218,2026-01-08,130,Westgate Clinic,60,Male,Type 2 Diabetes,5.6,Glucometer,2.8,1,21,16,9,baseline_a1c,8.8,8.6,1,1,0,0,79,3.5,140.96,610.83,Active
+P0219,2025-12-28,141,Riverside Family Clinic,59,Male,CHF,4.9,Multi-device,6.6,17,27,20,3,baseline_weight_kg,89.2,84.8,0,0,0,0,86,4.5,139.7,656.59,Active
+P0220,2025-09-14,246,Hilltop Primary Care,64,Female,CHF,5.7,Multi-device,4.1,6,18,18,2,baseline_weight_kg,84.6,81.2,0,0,0,0,89,4.3,144.13,1181.87,Active
+P0221,2025-11-09,190,Eastfield Community Clinic,85,Female,Hypertension,5.4,BP Monitor,4.5,4,22,21,8,baseline_systolic_bp,174.6,160.0,3,0,0,0,85,4.0,142.83,904.59,Active
+P0222,2025-08-31,260,Lakeshore Medical,50,Male,Hypertension,5.3,BP Monitor,7.6,35,36,33,7,baseline_systolic_bp,155.6,141.0,0,0,0,0,95,5.0,157.25,1362.83,Active
+P0223,2025-08-24,267,Riverside Family Clinic,66,Female,COPD,6.3,Pulse Oximeter,2.7,10,28,24,3,baseline_spo2,93.5,95.4,2,1,0,0,78,5.0,143.15,1274.04,Active
+P0224,2025-08-26,265,Hilltop Primary Care,60,Female,Hypertension,2.4,BP Monitor,2.8,12,20,20,0,baseline_systolic_bp,152.5,146.0,0,0,0,0,85,4.0,161.74,1428.7,Active
+P0225,2025-10-06,224,Lakeshore Medical,80,Female,Type 2 Diabetes,5.7,Glucometer,4.3,4,34,26,4,baseline_a1c,8.6,7.9,3,1,0,0,80,4.5,153.4,1145.39,Active
+P0226,2025-11-14,185,Hilltop Primary Care,51,Female,COPD,2.7,Pulse Oximeter,7.1,12,15,13,9,baseline_spo2,90.8,91.7,2,1,0,0,82,4.0,136.99,844.77,Active
+P0227,2025-11-07,192,Eastfield Community Clinic,44,Female,COPD,1.7,Pulse Oximeter,3.6,19,30,26,0,baseline_spo2,89.0,92.1,0,0,0,0,79,4.6,165.44,1058.82,Active
+P0228,2025-12-16,153,Riverside Family Clinic,49,Male,Hypertension,3.8,BP Monitor,5.9,17,21,16,0,baseline_systolic_bp,161.8,150.0,1,1,1,0,78,4.0,142.68,727.67,Active
+P0229,2025-11-20,179,Cedar Heights Health Center,68,Female,Type 2 Diabetes,4.4,Glucometer,5.8,9,16,16,0,baseline_a1c,10.3,10.3,1,1,0,0,72,4.1,173.64,1036.05,Active
+P0230,2025-11-11,188,Cedar Heights Health Center,88,Male,CHF,6.3,Multi-device,3.5,0,16,12,8,baseline_weight_kg,115.5,115.0,2,2,0,0,79,4.2,152.48,955.54,Active
+P0231,2025-09-28,232,Hilltop Primary Care,53,Female,CHF,5.5,Multi-device,4.7,7,29,22,14,baseline_weight_kg,105.2,100.8,2,1,0,0,80,4.3,149.69,1157.6,Active
+P0232,2025-09-30,230,Eastfield Community Clinic,67,Female,Hypertension,2.8,BP Monitor,5.6,11,19,18,2,baseline_systolic_bp,159.9,149.0,0,1,0,0,81,4.9,153.25,1174.92,Active
+P0233,2025-10-25,205,Riverside Family Clinic,81,Male,COPD,7.5,Pulse Oximeter,4.0,5,16,14,8,baseline_spo2,88.5,87.6,1,1,0,0,85,3.6,152.8,1044.13,Active
+P0234,2025-08-24,267,Hilltop Primary Care,84,Female,Hypertension,5.3,BP Monitor,1.2,1,18,17,3,baseline_systolic_bp,162.9,164.0,1,1,0,0,73,4.4,159.75,1421.78,Active
+P0235,2025-09-22,238,Hilltop Primary Care,63,Male,Type 2 Diabetes,6.1,Glucometer,3.5,11,25,23,9,baseline_a1c,7.6,6.8,5,4,0,0,72,3.8,156.14,1238.71,Active
+P0236,2025-10-21,209,Hilltop Primary Care,43,Female,Type 2 Diabetes,1.3,Glucometer,4.5,18,25,23,0,baseline_a1c,9.4,9.3,0,0,0,0,82,4.7,144.22,1004.73,Active
+P0237,2025-12-03,166,Westgate Clinic,89,Male,CHF,8.4,Multi-device,0,0,9,7,11,baseline_weight_kg,95.7,95.6,2,2,1,1,64,3.3,149.56,827.57,Disengaged
+P0238,2025-11-12,187,Lakeshore Medical,51,Male,Type 2 Diabetes,3.9,Glucometer,8.6,23,31,30,8,baseline_a1c,10.4,9.4,2,0,0,0,89,4.8,128.58,801.48,Active
+P0239,2025-09-03,257,Westgate Clinic,60,Female,COPD,4.0,Pulse Oximeter,0,3,14,11,6,baseline_spo2,89.0,87.9,3,4,0,1,75,3.2,162.88,1395.34,Disengaged
+P0240,2025-12-03,166,Westgate Clinic,70,Female,Hypertension,5.9,BP Monitor,6.0,12,13,13,11,baseline_systolic_bp,150.0,146.0,0,0,1,1,73,3.5,168.52,932.48,Withdrew
+P0241,2025-09-01,259,Riverside Family Clinic,76,Female,Hypertension,4.7,BP Monitor,4.8,12,20,17,0,baseline_systolic_bp,154.4,150.0,1,0,0,0,85,4.5,148.81,1284.73,Active
+P0242,2025-10-02,228,Cedar Heights Health Center,65,Female,CHF,6.1,Multi-device,5.7,12,22,19,10,baseline_weight_kg,83.5,83.0,2,1,0,0,85,3.7,138.93,1055.87,Withdrew
+P0243,2025-08-25,266,Cedar Heights Health Center,74,Female,COPD,6.1,Pulse Oximeter,4.1,3,15,11,10,baseline_spo2,92.4,92.3,2,1,1,2,77,3.6,143.94,1276.27,Active
+P0244,2025-09-27,233,Lakeshore Medical,82,Female,CHF,5.9,Multi-device,5.5,7,27,22,5,baseline_weight_kg,84.1,81.2,0,0,1,1,92,4.5,146.99,1141.62,Disengaged
+P0245,2025-11-29,170,Lakeshore Medical,66,Female,Type 2 Diabetes,4.7,Glucometer,8.9,15,36,32,8,baseline_a1c,9.7,8.0,1,0,0,1,94,5.0,134.48,762.05,Active
+P0246,2025-10-23,207,Hilltop Primary Care,57,Female,CHF,5.2,Multi-device,4.0,18,15,15,8,baseline_weight_kg,117.8,115.4,0,0,0,0,81,3.9,148.98,1027.96,Active
+P0247,2025-10-24,206,Cedar Heights Health Center,67,Male,Hypertension,6.4,BP Monitor,5.2,13,32,24,4,baseline_systolic_bp,176.9,170.0,3,2,1,0,73,4.0,151.64,1041.26,Active
+P0248,2025-10-14,216,Riverside Family Clinic,78,Female,Type 2 Diabetes,5.6,Glucometer,2.4,3,24,19,3,baseline_a1c,8.6,7.6,3,1,1,1,85,3.4,152.47,1097.78,Active
+P0249,2025-11-14,185,Westgate Clinic,59,Male,Hypertension,4.2,BP Monitor,4.1,17,20,20,10,baseline_systolic_bp,158.3,149.0,2,1,0,0,70,3.5,145.28,895.89,Withdrew
+P0250,2025-12-14,155,Cedar Heights Health Center,72,Non-binary,Type 2 Diabetes,3.7,Glucometer,3.7,8,15,14,1,baseline_a1c,10.6,9.8,0,0,0,0,80,3.4,153.76,794.43,Active

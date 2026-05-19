@@ -1,38 +1,47 @@
-name: ecole-des-mines-demo-domain
+name: sentinel-health-rpm-pilot
 version: "0.1.0"
 description: >
-  Bonus PAX accompanying the 2026-05-22 École des Mines guest lecture.
-  Wraps the domain of Prof. Elise Lambert's dataset (digital-health-shaped
-  placeholder until the real dataset's domain is confirmed) as a Praxis
-  v4 package — illustrating how a one-off dashboard becomes a portable
-  analytical artifact.
+  Companion PAX (appendix-only for the 2026-05-22 École des Mines guest
+  session) wrapping the Sentinel Health Remote Patient Monitoring pilot
+  domain. Captures the constructs, the dataset, and the playbook that
+  the live-built dashboard answers — packaged so a different health
+  system could re-run the same analysis on their own RPM data and get
+  a comparable answer.
 built_against_schema: "4.0"
 pax_type: enterprise
 author: "Joshua E. Lambert"
 created: "2026-05-19"
 license: CC-BY-4.0
-tags: [demo, ecole-des-mines, claude-code, digital-health, placeholder]
+tags: [rpm, remote-patient-monitoring, chronic-disease, claude-code, ecole-des-mines, synthetic]
 
 provides:
   constructs:
-    - visit_duration
-    - patient_satisfaction
-    - visit_cost
-    - care_category
-    - region
-    - age_group
+    - er_visit_reduction
+    - hospitalization_reduction
+    - engagement_intensity
+    - call_completion_rate
+    - clinical_improvement
+    - baseline_risk
+    - estimated_avoided_cost
+    - net_program_value
   sources:
-    - lambert_lecture_2026_demo
-  findings: []        # filled in once the real dataset is loaded
+    - meridiancare_sentinel_pilot_2026
+  findings: []        # populated when real outcomes are computed
   propositions: []
   playbooks:
     - quick_start
   datasets:
-    - dataset_id: ecole_des_mines_demo
-      display_name: "École des Mines demo dataset (placeholder)"
-      description: "Synthetic digital-health visit records used in the live demo until the real dataset is wired in."
+    - dataset_id: sentinel_health_pilot
+      display_name: "MeridianCare Sentinel Health RPM Pilot — 9-month snapshot"
+      description: >
+        250 patients across 6 partner clinics; chronic-disease cohort
+        (T2D, HTN, CHF, COPD); 9 months of engagement + utilization +
+        clinical metrics + cost data. Synthetic — no PHI.
       format: csv
-      unit_of_analysis: event
-      bundled: false
-      source_url: "REPLACE_ON_REAL_DATA"
+      unit_of_analysis: patient
+      bundled: true
+      parquet_relpath: ../dashboard/data/sentinel_health_pilot.csv
+      row_count: 250
+      column_count: 26
+      license: CC-BY-4.0
   engines: []
