@@ -1,0 +1,38 @@
+name: ecole-des-mines-demo-domain
+version: "0.1.0"
+description: >
+  Bonus PAX accompanying the 2026-05-22 École des Mines guest lecture.
+  Wraps the domain of Prof. Elise Lambert's dataset (digital-health-shaped
+  placeholder until the real dataset's domain is confirmed) as a Praxis
+  v4 package — illustrating how a one-off dashboard becomes a portable
+  analytical artifact.
+built_against_schema: "4.0"
+pax_type: enterprise
+author: "Joshua E. Lambert"
+created: "2026-05-19"
+license: CC-BY-4.0
+tags: [demo, ecole-des-mines, claude-code, digital-health, placeholder]
+
+provides:
+  constructs:
+    - visit_duration
+    - patient_satisfaction
+    - visit_cost
+    - care_category
+    - region
+    - age_group
+  sources:
+    - lambert_lecture_2026_demo
+  findings: []        # filled in once the real dataset is loaded
+  propositions: []
+  playbooks:
+    - quick_start
+  datasets:
+    - dataset_id: ecole_des_mines_demo
+      display_name: "École des Mines demo dataset (placeholder)"
+      description: "Synthetic digital-health visit records used in the live demo until the real dataset is wired in."
+      format: csv
+      unit_of_analysis: event
+      bundled: false
+      source_url: "REPLACE_ON_REAL_DATA"
+  engines: []

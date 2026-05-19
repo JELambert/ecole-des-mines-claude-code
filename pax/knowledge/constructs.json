@@ -1,0 +1,74 @@
+[
+  {
+    "id": "visit_duration",
+    "display_name": "Visit Duration (minutes)",
+    "construct_type": "quantifiable",
+    "definition": "Continuous measure of how long a care visit lasted, in minutes, from check-in to check-out. Placeholder until real schema is confirmed.",
+    "domain_ids": ["ecole_des_mines_demo_domain"],
+    "source_id": "lambert_lecture_2026_demo",
+    "operational_definition": "visit_minutes column in the demo dataset.",
+    "measurement_level": "ratio",
+    "aliases": [{"alias": "visit_minutes", "alias_type": "column_name"}],
+    "measures": ["visit_minutes (synthetic)"]
+  },
+  {
+    "id": "patient_satisfaction",
+    "display_name": "Patient Satisfaction (1–5)",
+    "construct_type": "quantifiable",
+    "definition": "Self-reported satisfaction with the visit on a 1–5 scale.",
+    "domain_ids": ["ecole_des_mines_demo_domain"],
+    "source_id": "lambert_lecture_2026_demo",
+    "operational_definition": "satisfaction column in the demo dataset.",
+    "measurement_level": "interval",
+    "aliases": [{"alias": "satisfaction", "alias_type": "column_name"}],
+    "measures": ["satisfaction (synthetic)"]
+  },
+  {
+    "id": "visit_cost",
+    "display_name": "Visit Cost (EUR)",
+    "construct_type": "quantifiable",
+    "definition": "Total cost charged for the visit, in euros.",
+    "domain_ids": ["ecole_des_mines_demo_domain"],
+    "source_id": "lambert_lecture_2026_demo",
+    "operational_definition": "cost_eur column in the demo dataset.",
+    "measurement_level": "ratio",
+    "aliases": [{"alias": "cost_eur", "alias_type": "column_name"}],
+    "measures": ["cost_eur (synthetic)"]
+  },
+  {
+    "id": "care_category",
+    "display_name": "Care Category",
+    "construct_type": "concept",
+    "definition": "Type of care delivered — primary_care, specialty, telehealth, or emergency.",
+    "domain_ids": ["ecole_des_mines_demo_domain"],
+    "source_id": "lambert_lecture_2026_demo",
+    "operational_definition": "category column in the demo dataset.",
+    "measurement_level": "nominal",
+    "aliases": [{"alias": "category", "alias_type": "column_name"}],
+    "measures": ["category enum (synthetic)"]
+  },
+  {
+    "id": "region",
+    "display_name": "Region",
+    "construct_type": "concept",
+    "definition": "Geographic region of the care site — North, South, East, West (placeholder).",
+    "domain_ids": ["ecole_des_mines_demo_domain"],
+    "source_id": "lambert_lecture_2026_demo",
+    "operational_definition": "region column in the demo dataset.",
+    "measurement_level": "nominal",
+    "aliases": [{"alias": "region", "alias_type": "column_name"}],
+    "measures": ["region enum (synthetic)"]
+  },
+  {
+    "id": "age_group",
+    "display_name": "Patient Age Group",
+    "construct_type": "concept",
+    "definition": "Coarse age bucket — 18-34, 35-54, 55-74, 75+.",
+    "domain_ids": ["ecole_des_mines_demo_domain"],
+    "source_id": "lambert_lecture_2026_demo",
+    "operational_definition": "age_group column in the demo dataset.",
+    "measurement_level": "ordinal",
+    "aliases": [{"alias": "age_group", "alias_type": "column_name"}],
+    "measures": ["age_group enum (synthetic)"]
+  }
+]

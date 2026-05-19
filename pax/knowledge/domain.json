@@ -1,0 +1,13 @@
+{
+  "id": "ecole_des_mines_demo_domain",
+  "display_name": "Digital Health Visit Analytics (Demo)",
+  "description": "Placeholder domain for the École des Mines guest lecture — analyzing care visits by category, region, age group, duration, cost, and patient satisfaction. Will be replaced with the actual domain Prof. Lambert's dataset describes once received.",
+  "temporal_scope": "2025-2026",
+  "population": "Care-visit records (synthetic placeholder)",
+  "level_of_analysis": "micro",
+  "research_questions": [
+    "How does visit duration vary by care category and region?",
+    "What drives patient satisfaction across age groups?",
+    "How does cost track with visit duration across categories?"
+  ]
+}

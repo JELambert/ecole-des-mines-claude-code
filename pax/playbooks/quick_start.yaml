@@ -1,0 +1,37 @@
+id: quick_start
+display_name: "Quick Start — Demo Domain"
+description: "Replicates the dashboard's headline analyses against the demo dataset."
+estimated_runtime: "<1 minute"
+requires_data: true
+
+steps:
+  - id: register_demo_dataset
+    step: 1
+    display_name: "Register demo dataset"
+    action: register_dataset
+    params:
+      dataset_id: ecole_des_mines_demo
+
+  - id: data_quality_check
+    step: 2
+    display_name: "Data Quality Gate"
+    action: data_quality_gate
+    params:
+      constructs:
+        - visit_duration
+        - patient_satisfaction
+        - visit_cost
+      min_observations: 100
+      max_missing_pct: 0.10
+    on_failure: abort
+
+  - id: descriptive_summary
+    step: 3
+    display_name: "Descriptive summary by category"
+    engine: descriptive_stats
+    params:
+      group_by: care_category
+      variables:
+        - visit_duration
+        - patient_satisfaction
+        - visit_cost

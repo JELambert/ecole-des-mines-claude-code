@@ -1,0 +1,16 @@
+[
+  {
+    "id": "lambert_lecture_2026_demo",
+    "source_type": "dataset",
+    "title": "École des Mines guest-lecture demo dataset",
+    "authors": "Lambert, Joshua E.; Lambert, Elise (data provider)",
+    "year": 2026,
+    "abstract": "Placeholder source-of-record for the demo PAX accompanying the 2026-05-22 guest lecture. Will be replaced once Prof. Lambert's actual dataset is wired in.",
+    "methodology_summary": "Synthetic data generation; deterministic seed; digital-health-shaped record structure.",
+    "sample_size": 1500,
+    "population_description": "Synthetic care visits.",
+    "study_design": "observational_cross_sectional",
+    "data_availability": "public",
+    "url": "https://github.com/JELambert/ecole-des-mines-2026"
+  }
+]
