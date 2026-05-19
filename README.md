@@ -4,12 +4,14 @@ Friday 2026-05-22 · ~60 min · Saint-Étienne · invited by [[elise]] for her g
 
 ## What this repo is
 
-A self-contained build for a one-hour live lecture that **uses itself as the demo**. The talk is *about* developing with Claude Code, and every artifact here was built with Claude Code on a deadline — so the repo doubles as the worked example.
+A self-contained build for a one-hour live session that **uses itself as the demo**. Audience pivoted on 2026-05-19 from "engineering grad students" to **Texas healthcare administrators traveling with Elise** — non-coders, intro level. The talk is *about* what AI coding tools mean for non-engineers who run clinics. Every artifact here was built with Claude Code on a deadline — the repo doubles as the worked example.
+
+**PAX is now appendix-only**, not part of the main arc.
 
 ```
 slides/        Marp markdown deck → PDF/HTML
 dashboard/     Streamlit app over Elise's dataset (the live demo)
-pax/           Praxis PAX package wrapping the dataset's domain (bonus arc)
+pax/           Praxis PAX skeleton — APPENDIX ONLY (mentioned in bonus slide, not demoed)
 docs/          Timeline, demo script, talking notes, risk register
 scripts/       Build helpers (slides → PDF, dashboard launch)
 PLAN.md        The model — read this first

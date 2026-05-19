@@ -2,329 +2,307 @@
 marp: true
 theme: default
 paginate: true
-header: 'École des Mines — Building with Claude Code'
-footer: 'Joshua E. Lambert · 2026-05-22 · jelambert.com'
+header: 'Making Software Without Being a Software Engineer'
+footer: 'Joshua E. Lambert · École des Mines · 2026-05-22'
 style: |
   section {
     background-color: #ffffff;
     color: #1f2937;
-    font-size: 28px;
+    font-size: 30px;
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
   }
-  h1 { color: #1e3a8a; font-size: 48px; }
-  h2 { color: #3b82f6; font-size: 36px; }
+  h1 { color: #1e3a8a; font-size: 50px; }
+  h2 { color: #3b82f6; font-size: 38px; }
   strong { color: #1e40af; }
-  code { font-size: 22px; background: #f1f5f9; padding: 1px 6px; border-radius: 3px; }
-  pre code { font-size: 20px; }
-  table { font-size: 22px; }
   blockquote { border-left: 4px solid #3b82f6; padding-left: 16px; color: #475569; }
-  .lead h1 { font-size: 60px; }
+  .lead h1 { font-size: 62px; }
+  .small { font-size: 22px; color: #64748b; }
+  .big { font-size: 48px; text-align: center; padding-top: 40px; color: #1e3a8a; }
   .session-marker {
     background-color: #1e3a8a; color: white; padding: 20px;
     text-align: center; font-size: 2em;
   }
-  .small { font-size: 20px; color: #64748b; }
 ---
 
 <!-- _class: lead -->
-# Building with Claude Code
+# Making Software Without Being a Software Engineer
 
-## A one-hour guest lecture
+## What AI coding tools mean for people who run things
 
 **Joshua E. Lambert, PhD**
 École des Mines de Saint-Étienne · 2026-05-22
 
-<span class="small">Invited by Prof. Elise Lambert · grad-student cohort</span>
+<span class="small">A guest session with Prof. Elise Lambert's cohort</span>
 
 ---
 
-# Meta-disclosure
+# Quick note before we start
 
-> These slides were written with Claude Code.
-> So was the dashboard you'll see at minute 25.
-> So was the PAX package you'll see at minute 45.
->
-> Total build time: **under three hours**, including this disclosure.
+> These slides, and the working app you'll see in 20 minutes, were made by AI **on my laptop, in under three hours**.
 
-The **medium is the message**. Hold me to it.
+I'll only mention this once. I'm telling you so you know what's possible — not to brag about the slides.
 
 ---
 
-# Who I am
+# Who I am (30 seconds)
 
-**Joshua E. Lambert, PhD**
-VP, Data Solutions AI · FactSet Research Systems (S&P 500)
-Global Scholar & Visiting Professor · University of South Alabama
+- VP, Data Solutions AI at FactSet — I build AI teams that ship real things
+- Visiting Professor at the University of South Alabama — I teach PhD students how to use ML and Python
+- PhD in Security Studies; background in research before industry
+- I love this stuff because it lets people build what they need, when they need it
 
-Building & scaling AI teams in regulated industries: production knowledge graphs, NLP, GenAI. Cross-domain — financial services, defense, international development.
-
-**Teaching:** BA798 (ML & AI for Business Analytics), BUS751 (Python for Business Analytics) — PhD-level.
-
-**Online:**
-- 🌐 [jelambert.com](https://jelambert.com)
-- 💼 [linkedin.com/in/joshuaelambert](https://www.linkedin.com/in/joshuaelambert/)
-- ✍️ [joshlambert.substack.com](https://joshlambert.substack.com)
-- 💻 [github.com/JELambert](https://github.com/JELambert)
-
----
-
-# Background (one slide, then we move on)
-
-- **PhD**, Security Studies, University of Central Florida
-- **MA**, Political Science, University of New Orleans
-- **BA**, Political Science, Auburn University
-
-8 peer-reviewed journals · 2 book chapters · policy reports
-Research has spanned political psychology, conflict forecasting, fisheries security, NLP applications, AI governance.
-
-Today I want to show you a **tool**, not a CV.
+**Online if you want:** [jelambert.com](https://jelambert.com) · [linkedin.com/in/joshuaelambert](https://www.linkedin.com/in/joshuaelambert/)
 
 ---
 
 <!-- _class: session-marker -->
-# Part 1 — What is Claude Code?
+# The problem this solves
 
 ---
 
-# Claude Code is not autocomplete
+# A question
 
-| | Autocomplete (Copilot, Cursor tab) | Chat (ChatGPT in a browser) | **Agentic CLI (Claude Code)** |
-|---|---|---|---|
-| Lives in | Your editor | A browser tab | **Your terminal, in your repo** |
-| Context | Open file ± nearby | What you paste | **The whole project, your tools, your shell** |
-| Action | Suggests next token | Suggests text | **Reads, writes, runs, retries** |
-| Memory | None | Per-conversation | **Files, hooks, skills, persistent** |
+> Has there ever been a report, a dashboard, a tool you wished existed at your clinic — and either you lived without it, or you waited weeks for IT to build it?
 
-The shift: from *suggesting code* to **doing the work** alongside you.
+(Show of hands.)
 
 ---
 
-# The loop (mental model)
+# That is the gap
 
-```
-┌──────────────┐
-│  You speak   │  natural language, your repo as context
-└──────┬───────┘
-       ▼
-┌──────────────┐
-│  Plan        │  tool calls drafted, dependencies traced
-└──────┬───────┘
-       ▼
-┌──────────────┐
-│  Act         │  Read / Edit / Write / Bash — in your tree
-└──────┬───────┘
-       ▼
-┌──────────────┐
-│  Verify      │  tests, linters, runs the thing
-└──────┬───────┘
-       ▼
-┌──────────────┐
-│  Report      │  diff summary, what changed, what's next
-└──────────────┘
-```
+For decades, if you wanted custom software, you had to:
 
-Each step is **observable**. You see every file touched.
+- **Hire a developer** (expensive, slow)
+- **Wait for IT** (slow, often deprioritized)
+- **Live without it** (most common outcome)
+
+The result: thousands of small, useful tools never got built. Decisions were made with worse information.
 
 ---
 
-# Three primitives that change everything
+<div class="big">
 
-**Skills** — reusable workflows (e.g. `/cite` ingests a paper end-to-end; `/intake` processes voice memos)
+That is what's changing.
 
-**Hooks** — shell commands that fire on events (`SessionStart` injects today's context; `PreToolUse` blocks dangerous ops)
-
-**Sub-agents** — Claude can spawn isolated workers (research, code review, parallel exploration) and synthesize
-
-Together: you're not prompting a chatbot. You're **directing a system**.
-
----
-
-# A real session, anatomized
-
-```text
-$ claude
-> add a category filter to the dashboard and chart trends per category
-
-⏺ Reading dashboard/app.py …
-⏺ Reading dashboard/data/loader.py …
-⏺ Edit dashboard/app.py (+18 −2)
-⏺ Edit dashboard/components/filters.py (new, 24 lines)
-⏺ Bash: uv run streamlit run app.py --check
-   ✓ runs, no errors
-⏺ Task: write a test for the new filter
-   ✓ 3 assertions pass
-
-Done. New filter in the sidebar; trend chart respects it. Committed.
-```
-
-Watch this happen in 6 minutes at minute 25.
+</div>
 
 ---
 
 <!-- _class: session-marker -->
-# Part 2 — The dataset & the question
+# What's actually new
 
 ---
 
-# The data (Elise's contribution)
+# Think of it like this
 
-<!-- Fill in once dataset arrives -->
+**Old way** — you tell a developer what you want. They go away. They come back later with a thing. You iterate.
 
-**Source:** *(provided by Prof. Lambert)*
-**Shape:** *(rows × cols — TBD)*
-**Domain:** *(TBD — digital health / informatics likely)*
-**The question we'll answer:** *(TBD)*
+**New way** — you tell the AI what you want. It builds it **while you watch**. You see it work. You ask for changes. It changes it.
 
-> Why real data matters here: the demo is only convincing if the dashboard solves a problem you actually have.
+It's like having a **junior analyst sitting next to you** who can read, write, and run code — and never gets tired, never goes to lunch, never costs $90,000 a year.
 
 ---
 
-# The dashboard (target state)
+# What it can do (plain language)
 
-A Streamlit app with:
+- **Read** the files on your computer (spreadsheets, documents, data)
+- **Write** new files (apps, reports, charts)
+- **Run** the things it writes — and show you what they do
+- **Fix** what it gets wrong, when you point it out
 
-- **KPI strip** at the top (3–5 headline numbers)
-- **Filters** in the sidebar (date range, category, segment)
-- **Two charts** — one trend, one breakdown
-- **Drill-down table** at the bottom
-
-Built end-to-end through Claude Code. The git history *is* the lecture notes.
+You don't write code. You **describe what you want**, and you **check the result**.
 
 ---
 
-<!-- _class: session-marker -->
-# Part 3 — Live demo (~20 min)
+# What it cannot do (be honest)
 
----
+- **Read your mind.** You still have to be specific.
+- **Replace knowing what's worth building.** That's still your job.
+- **Be trusted blindly.** You verify. You always verify.
+- **Touch data it shouldn't touch.** *(More on HIPAA in 10 minutes.)*
 
-# What I'll do live
-
-1. Open the repo in Claude Code
-2. Show the current dashboard running
-3. **You pick** one of three extensions:
-   - Add a new filter
-   - Add a metric trend
-   - Add a cross-tab tab
-4. Drive Claude Code to implement it
-5. Run it · fix what breaks · commit
-
-If the network fails: I have three recordings ready. The point survives.
-
----
-
-<!-- placeholder slide kept short — actual live action happens off-deck -->
-
-# What you'll notice
-
-- Claude Code **asks before doing risky things** (deleting files, force-push)
-- It **reads before it writes**
-- It runs the test/server itself; you see real output, not promises
-- The diff is reviewable; nothing is opaque
+This is a **tool**, not a replacement for thinking.
 
 ---
 
 <!-- _class: session-marker -->
-# Part 4 — Bonus: PAX
+# The demo: Elise's data
 
 ---
 
-# From app to portable knowledge
+# The question we'll answer
 
-A **PAX** (*Portable Analytical eXpertise*) is a package format that bundles:
+<!-- Fill in once Elise's dataset is wired -->
 
-- The **concepts** in a domain (constructs)
-- The **knowledge** about it (findings, with structured statistics)
-- The **raw data** behind the findings
-- A **playbook** — a reproducible analysis workflow
+**Dataset:** *(brief description — Elise's data)*
 
-It's an open spec — see [pax-market.com](https://pax-market.com).
+**The question:** *(framed in a way an administrator would actually ask)*
 
----
-
-# Why this matters
-
-Your dashboard answers *today's* question.
-A PAX captures the **domain itself** so the next person can:
-
-- Re-derive the findings from the raw data
-- Compare across studies on the same constructs
-- Run the playbook on new data and get a comparable answer
-
-It's the difference between **shipping an answer** and **shipping a method**.
+**What we'll build:** a small interactive dashboard that lets you slice, filter, and chart this data — built live, in front of you.
 
 ---
 
-# What the PAX looks like
+# Right now — here's the starting point
 
-```
-pax/
-├── pax.yaml                          # manifest
-├── knowledge/
-│   ├── domain.json                   # the field
-│   ├── constructs.json               # variables, with formal definitions
-│   ├── sources.json                  # where claims came from
-│   └── findings.json                 # claims, with effect sizes + p-values
-└── playbooks/
-    └── quick_start.yaml              # reproducible analysis
-```
+*(Switch to live dashboard on screen.)*
 
-Built — like the dashboard — with Claude Code.
+What you see: a basic dashboard with this data already loaded.
+What's missing: the specific things **you** want to see.
+
+That's where we go next.
 
 ---
 
 <!-- _class: session-marker -->
-# Part 5 — What this changes
+# Live build (~20 minutes)
 
 ---
 
-# Where Claude Code lands well
+# Three things we could add — pick one
 
-- **Scaffolding** — new repos, boilerplate, "make me a starting point"
-- **Mechanical refactors** — rename, split, restructure
-- **Glue code** — wiring APIs, dashboards, ETL
-- **Tests** — writing them, fixing them, expanding coverage
-- **Docs** — README, comments, ADRs
-- **Exploring unfamiliar code** — "explain this module"
+1. **A chart showing visits over time** — "When are we busy?"
+2. **Color-coding by patient age group** — "Who are we seeing?"
+3. **A headline number showing average visit cost** — "What does it cost us?"
 
----
-
-# Where it doesn't (yet)
-
-- **Original research** — it can speed up the surrounding work, not the insight
-- **Decisions involving real stakes** — security, money, irreversible ops
-- **Domains it has no context for** — your private codebase still requires your judgment
-- **Replacing the human who understands the problem** — you stay in the loop
-
-The skill that compounds isn't *prompting*. It's **deciding what to build**.
+(Audience picks. If silence, we do #1.)
 
 ---
 
-# How your students could start
+# Here's what I'm going to do
 
-1. Install: `npm install -g @anthropic-ai/claude-code`
-2. Open a small project; run `claude`
-3. Pick **one** boring task you've been putting off; let Claude Code do it
-4. Read the diff. Don't accept blindly.
-5. Build a habit: every week, one task you'd have dreaded — let the tool drive
-6. After two weeks, write your first **skill** (a reusable workflow)
+1. I type the request in plain English
+2. The AI reads the existing app
+3. It writes the change
+4. It runs it
+5. We look at the result together
+6. If it's wrong, we say so, and it tries again
 
-The fluency comes from reps on real tasks, not from tutorials.
+**Watch the dashboard, not the terminal.** The terminal is just receipts.
 
 ---
 
-# References & repo
+<!-- live demo happens off-deck — these slides are bumpers -->
 
-- This deck + code: `github.com/JELambert/ecole-des-mines-2026` *(public after the talk)*
-- Claude Code docs: [docs.claude.com/claude-code](https://docs.claude.com/en/docs/claude-code/overview)
-- PAX spec: [pax-market.com](https://pax-market.com)
-- My write-ups: [joshlambert.substack.com](https://joshlambert.substack.com)
+# What you just saw
 
-**Contact:** JoshuaE.Lambert@gmail.com · [jelambert.com](https://jelambert.com)
+- **Plain English in, working software out**
+- **Total time: a few minutes** for something that would have been a Jira ticket
+- The result is **a thing you can keep, share, run again**, not a one-off chat answer
+
+Now imagine doing this for a problem at your clinic.
+
+---
+
+<!-- _class: session-marker -->
+# What this means for your work
+
+---
+
+# Things you could build in a weekend
+
+- **A no-show predictor** — flag patients likely to miss next week's appointments
+- **A scheduling fairness check** — are appointment slots distributed evenly across providers?
+- **A one-off survey analyzer** — paste in 200 responses, get themes back
+- **A cost-per-visit dashboard** — by category, by provider, by month
+- **A staff hour tracker** — read the timecard CSV, flag anomalies
+- **A billing audit helper** — find claims that look unusual
+- **A patient-letter drafter** — write the first draft, you edit
+
+Every one of these has been built by a non-engineer in a weekend.
+
+---
+
+# The honest cost
+
+| Tool | Cost | When to use |
+|---|---|---|
+| **ChatGPT / Claude (chat)** | $0–$20/mo | Quick questions, drafting, explanations |
+| **Claude Code / Cursor** | $20/mo + usage | Building actual software |
+| **Heavy use (API direct)** | $50–$300/mo | Daily power use |
+
+For comparison: hiring one developer for one week ≈ **$5,000+**.
+A year of Claude ≈ **$240**.
+
+The economics aren't close.
+
+---
+
+# The HIPAA conversation
+
+**Do not paste patient identifiers into a public chatbot.** ChatGPT/Claude consumer subscriptions are not HIPAA-compliant by default.
+
+**Safer paths:**
+- Run the AI tool **on your own laptop** with **de-identified data** (this is what we did today)
+- Use **enterprise tiers** with signed BAAs (Anthropic and OpenAI both offer them)
+- Talk to your **compliance officer before** putting any PHI near these tools
+
+**Rule of thumb:** if it would be a problem to email it to your friend, it's a problem to put it in a chatbot.
+
+---
+
+# How to start Monday morning
+
+1. **Install Claude Desktop** (free) at [claude.ai/download](https://claude.ai/download)
+2. **Pick one boring task** — a report you make every month, a spreadsheet you clean up by hand
+3. **Ask it:** *"Help me automate this. Here's an example of what I do today."*
+4. Spend 30 minutes. See how far it gets.
+
+That's the whole first step. Not a course. Not a certification. Thirty minutes.
+
+---
+
+# What I want you to leave with
+
+1. **You can now make software without being a software engineer.** This is new. It's real.
+2. **Start with one small, real thing.** Not a moonshot.
+3. **Be careful with patient data.** HIPAA hasn't gone away.
+4. **The skill that matters isn't typing prompts.** It's knowing what's worth building.
+
+That last one is what you already have.
+
+---
+
+<!-- _class: session-marker -->
+# Questions?
+
+---
+
+# Contact + further reading
+
+- [jelambert.com](https://jelambert.com)
+- [linkedin.com/in/joshuaelambert](https://www.linkedin.com/in/joshuaelambert/)
+- [joshlambert.substack.com](https://joshlambert.substack.com) — I write about this
+- Email: JoshuaE.Lambert@gmail.com
+
+**The deck and the app you saw:** *(repo URL — share after the talk if asked)*
+
+Merci à [[elise|Elise]] pour l'invitation. Thank you all for your attention.
 
 ---
 
 <!-- _class: lead -->
-# Questions?
+# Appendix
+## (For the curious — not part of the talk)
 
-Merci à Elise pour l'invitation.
-Merci à vous pour votre attention.
+---
+
+# Bonus: from app to portable knowledge
+
+The dashboard we built today answers **today's question**.
+
+There's a research direction — a thing called a **PAX** (*Portable Analytical eXpertise*) — that packages the *domain itself* so the next person can re-run the same analysis on different data and get a comparable answer.
+
+It's how "I built this once" becomes "anyone can run this anywhere."
+
+Not part of the core talk. Ask me afterward if you're curious. Repo has the structure.
+
+---
+
+# Bonus: how this is actually built
+
+- **Claude Code** — the AI coding tool I used
+- **Streamlit** — the simplest way to make a Python web dashboard
+- **Marp** — the slide format these slides are written in (yes, also AI-built)
+- **Git** — version control; tracks every change
+
+You don't need to learn any of these to *use* what AI builds for you. But if you want to peek under the hood, those are the names to google.

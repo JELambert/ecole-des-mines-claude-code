@@ -1,62 +1,68 @@
 # Live-demo script (minute 25 → 45)
 
-> Goal: show Claude Code extending the dashboard end-to-end. ~20 minutes of stage time. Three reps of the loop: ask → plan → act → verify.
+> Goal: show a working dashboard *change in front of them* in response to a plain-English request. Audience is healthcare administrators with no coding background — **keep them watching the dashboard, not the terminal.**
 
-## Pre-stage (do before walking on)
+## Pre-stage
 
-1. Terminal open, full-screen, font size cranked (≥18pt). Prompt clean.
-2. Dashboard already running in a separate browser tab — `localhost:8501`.
-3. `cd dashboard` already done.
-4. Claude Code launched, sitting at empty prompt.
-5. Phone on tether, wifi off as primary.
-6. Three fallback recordings open in QuickTime, paused at frame 0:
-   - `docs/fallback-recordings/01-filter.mov`
-   - `docs/fallback-recordings/02-trend.mov`
-   - `docs/fallback-recordings/03-crosstab.mov`
+1. Two windows visible:
+   - **Left half: the dashboard** (browser, full visible).
+   - **Right half: Claude Code terminal** (smaller; they don't read it).
+2. Font on terminal cranked (≥18pt) for the moments it matters.
+3. Dashboard already running on Elise's real data at `localhost:8501`.
+4. Phone on tether; wifi off as primary.
+5. Three fallback recordings open in QuickTime, paused.
 
-## The three asks (pick one — let audience choose)
+## The three asks (audience picks)
 
-### A. "Add a filter by category to the sidebar"
-- Easiest. Three-line change in `components/filters.py`.
-- Run-time risk: low. Default fallback.
+### A. "Add a chart showing visits over time"
+- Default if audience is silent.
+- Result is a **clearly visible new chart**. High legibility.
+- Risk: low.
 
-### B. "Chart the trend of <metric> over time, broken down by category"
-- Medium. Touches `components/charts.py`; needs a `color=` kwarg + grouping.
-- Most visually interesting result.
+### B. "Color the existing chart by patient age group"
+- Result: existing chart adds colored segments.
+- Visually obvious, slightly more complex than A.
 
-### C. "Add a third tab with a crosstab of category × region"
-- Hardest. Touches `app.py` (new layout) + new component.
-- Best showcase if everything's going well.
+### C. "Add a number at the top showing average visit cost"
+- A single KPI tile appears.
+- Smallest visual change, but most "huh, that was easy."
 
-## Patter (≈ what I'm saying while it runs)
+All three are tuned so a non-coder sees an obvious result.
 
-**Opening line:**
-> "I want you to see what I see when I work this way. I'm going to ask Claude Code to extend this dashboard, in front of you, against the same code you can see on screen."
+## Patter (what to say while it runs)
 
-**While Claude reads:**
-> "Notice it's reading first. It doesn't write before it knows what's there. This sounds obvious, but watch it — it's pulling in `app.py`, then the loader, then the component. That's the same pass *I* would make if I were doing this by hand."
+**Opening line, after audience picks:**
+> "Watch the dashboard, not the terminal. The terminal is just receipts — it tells me what's happening underneath. The thing that matters is what changes on your screen."
+
+**While Claude reads files:**
+> "Right now it's reading the app — looking at what's already there, the same way you'd glance at a recipe before you start cooking. Notice it's not just guessing. It's checking."
 
 **While Claude edits:**
-> "Now it edits. Each change is a diff. Nothing is opaque. If you're skeptical of AI tools — and you should be — this is what to demand of them: that you can see exactly what changed."
+> "Now it's writing the change. Every word is something I could read if I wanted to. Nothing is hidden. If you don't trust an AI tool — and you shouldn't trust one blindly — this is the part where you would check its work."
 
 **While Claude runs:**
-> "Now it's running it. It just discovered the same thing I would have if I'd tested manually. Notice it's about to fix it without me telling it."
+> "And now it's running it. The dashboard is going to reload in a second. If the AI made a mistake, it'll see the error itself and try to fix it. Just like you would."
 
-**Wrap:**
-> "Total elapsed time: ~6 minutes for an end-to-end feature. The point isn't the feature. The point is the *workflow*. This is what I mean by 'building with Claude Code' — you stay in the loop, you stay in control, but the mechanical work moves off your plate."
+**When the result appears:**
+> "There. That's the change you asked for. Total time, maybe four minutes. Imagine that's the no-show report you've been meaning to build for two years."
 
-## If it fails (decision tree)
+## If it fails
 
 | Symptom | Action |
 |---|---|
-| Claude Code times out / no response in 15s | Cut to fallback video; "let's look at one I prepared" |
-| Claude Code edits but the app doesn't run | Show the error in terminal; if fixable in <2 min, fix it live. If not → fallback video |
-| Network drops entirely | "Demo gods are angry today" → play fallback video. Same talking points still work |
-| Wrong file edited | Show the diff; revert with `git checkout`; explain why this is the safety net of working in a repo |
+| Claude Code stalls 15+ seconds | Cut to fallback video. "Let's look at one I prepared earlier — the point is the same." Don't apologize. |
+| Edits but app errors out | Show the error briefly: *"see, it caught its own mistake."* If fixable in <90 seconds, fix live. Otherwise switch to fallback. |
+| Network drops | Switch to tether. If that fails: fallback video. *"Welcome to live demos."* — gets a laugh. |
+| Wrong file edited | Show `git checkout` — explain that **every change is undoable**, this is the safety net. Reinforces a key talking point. |
 
 ## Don't do
 
-- Don't make this about **prompting**. Treat the prompt as ordinary instruction.
-- Don't apologize for what the model can't do. Show it doing what it *can*.
-- Don't read the screen aloud. Audience can read.
-- Don't oversell. The strongest move is letting them see *normal* work happen fast.
+- Don't make this about **the model** or **prompting**. Make it about the **outcome**.
+- Don't read terminal output aloud — they will tune out.
+- Don't apologize for things the AI can't do — show what it *can*.
+- Don't mention "tokens," "MCP," "agentic," "skills," "sub-agents," "CLI." These words turn off non-engineers in seconds.
+- Don't oversell. Let the change-on-screen do the talking.
+
+## Two reps max
+
+Originally planned 3 reps. The plan is now **2 reps** and reclaim the time for the "what could you build" + "HIPAA" content, which is what this audience actually needs.

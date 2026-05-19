@@ -1,6 +1,8 @@
-# PAX — Demo Domain
+# PAX — Demo Domain (APPENDIX ONLY)
 
-A skeleton Praxis PAX (v4) wrapping the demo-dashboard's domain. Built as the **bonus arc** of the École des Mines lecture: showing how a one-off Streamlit app's underlying concepts can be packaged as portable, replicable, comparable knowledge.
+> **Status changed 2026-05-19:** the audience pivoted to Texas healthcare administrators with no coding background. PAX is **not part of the main talk arc** — it's referenced briefly in an appendix slide as "if you're curious." Kept in the repo as bonus material per the original "bonus points" ask. Do not demo this live.
+
+A skeleton Praxis PAX (v4) wrapping the demo-dashboard's domain. Shows how a one-off Streamlit app's underlying concepts can be packaged as portable, replicable, comparable knowledge.
 
 ## Structure
 
