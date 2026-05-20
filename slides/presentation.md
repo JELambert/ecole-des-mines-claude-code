@@ -2,7 +2,7 @@
 marp: true
 theme: default
 paginate: true
-header: 'Making Software Without Being a Software Engineer'
+header: 'Claude Code for a Non-Programmer'
 footer: 'Joshua E. Lambert · École des Mines · 2026-05-22'
 style: |
   section {
@@ -27,20 +27,12 @@ style: |
 <!-- _class: lead -->
 # Making Software Without Being a Software Engineer
 
-## What AI coding tools mean for people who run things
+## Claude Code for a non-programmer
 
 **Joshua E. Lambert, PhD**
 École des Mines de Saint-Étienne · 2026-05-22
 
-<span class="small">A guest session with Prof. Elise Lambert's cohort</span>
-
----
-
-# Quick note before we start
-
-> These slides, and the working dashboard you'll see in 20 minutes, were made by AI **on my laptop, in under three hours**.
-
-I'll only mention it once. I'm telling you so you know what's possible — not to brag.
+<span class="small">A guest session with Dr. Elise Lambert's 2026 cohort</span>
 
 ---
 
@@ -48,23 +40,16 @@ I'll only mention it once. I'm telling you so you know what's possible — not t
 
 - **VP, Data Solutions AI at FactSet** — I build AI teams that ship real software
 - **Visiting Professor, University of South Alabama** — I teach PhD students how to use ML and Python
-- PhD in Security Studies; ML/NLP researcher before industry
-- I'm here because Elise asked, and because I think this stuff actually matters for people running things
+- **PhD in Security Studies** (University of Central Florida); ML/NLP researcher before industry
+- **Research domains I publish in** — political conflict, civil-military relations, NLP & conflict forecasting, applied economics, political psychology
 
 [jelambert.com](https://jelambert.com) · [linkedin.com/in/joshuaelambert](https://www.linkedin.com/in/joshuaelambert/)
 
 ---
 
-<!-- _class: session-marker -->
-# The problem this solves
-
----
-
 # A question
 
-> Has there ever been a report, a dashboard, or a tool you wished existed at your clinic — and either you lived without it, or you waited weeks for IT to build it?
-
-(Show of hands.)
+> Has there ever been a report, a dashboard, or a tool you wished existed — and either you lived without it, or you waited weeks for IT to build it?
 
 ---
 
@@ -80,20 +65,7 @@ Result: thousands of small, useful tools never got built. Decisions made with wo
 
 ---
 
-<div class="big">
-
-That is what's changing.
-
-</div>
-
----
-
-<!-- _class: session-marker -->
-# What's actually new
-
----
-
-# Think of it like this
+# Paradigm shift
 
 **Old way** — you tell a developer what you want. They go away. They come back later. You iterate slowly.
 
@@ -119,7 +91,6 @@ You don't write code. You **describe what you want**, and you **check the result
 - **Read your mind.** You still have to be specific.
 - **Replace knowing what's worth building.** That's still your job.
 - **Be trusted blindly.** You verify. Always.
-- **Touch data it shouldn't touch.** *(More on HIPAA in 10 minutes.)*
 
 This is a **tool**, not a replacement for thinking.
 
@@ -178,142 +149,32 @@ A spreadsheet. **250 rows. 26 columns.**
 - Cost (monthly, total to date)
 - Patient satisfaction (1–5)
 
-(For privacy, every patient in this dataset is **synthetic** — Elise generated it. No real patient data.)
+(Every patient in this dataset is **synthetic** — Elise generated it. No real patient data.)
 
 ---
 
-# Right now — the starting point
+# Now we switch to Claude Code
 
-*(Switch to live dashboard.)*
+What you're about to see: **me building this dashboard, live, from scratch.**
 
-What you see: the headline numbers — ER reduction, hospitalization reduction, satisfaction, total cost — and a slice of the data.
+- No slides for the next ~25 minutes
+- I'll narrate as I go
+- You'll see the **real terminal**, the **real prompts**, the **real edits**, and the **dashboard appearing piece by piece**
+- It will not be perfect on the first try. That is the point.
 
-What's missing: the specific things **you** would want to drill into.
-
----
-
-<!-- _class: session-marker -->
-# Live build (~20 minutes)
+When something looks unfamiliar, stop me. The vocabulary on the next slide should cover most of it.
 
 ---
 
-# Three things we could add — you pick
+# Vocabulary you'll see
 
-1. **A chart of ER visits over time, by clinic site** — "Are some sites improving faster than others?"
-2. **Color the engagement scatter by patient age band** — "Are older patients engaging differently?"
-3. **A headline number showing average net value per patient** — "Is this paying off, per patient?"
-
-(Audience picks. Silence → default to #1.)
-
----
-
-# Here's what I'm going to do
-
-1. I type the request in plain English
-2. The AI reads the existing dashboard
-3. It writes the change
-4. It runs it
-5. We look at the result together
-6. If it's wrong, we say so, and it tries again
-
-**Watch the dashboard, not the terminal.** The terminal is just receipts.
-
----
-
-# What you just saw
-
-- **Plain English in, working software out**
-- **Total time: a few minutes** for something that would have been a Jira ticket
-- The result is **a thing you can keep, share, and run again** — not a one-off chat answer
-
-Now imagine doing this for a problem at your clinic.
-
----
-
-<!-- _class: session-marker -->
-# What this means for your work
-
----
-
-# Things you could build in a weekend
-
-- **A no-show predictor** — flag patients likely to miss next week
-- **A scheduling fairness check** — are slots distributed evenly across providers?
-- **A one-off survey analyzer** — paste 200 responses, get themes back
-- **A cost-per-visit dashboard** — by category, by provider, by month
-- **A staff hour tracker** — read the timecard CSV, flag anomalies
-- **A billing audit helper** — find claims that look unusual
-- **A patient-letter drafter** — write the first draft, you edit
-
-Every one of these has been built by a non-engineer in a weekend.
-
----
-
-# Like Maya's dashboard — but for you
-
-The dashboard you just watched get built **costs less to build than one consultant lunch**.
-
-It answers questions a board will pay six figures to answer correctly.
-
-The constraint is no longer "can we build it" — it's "**do we know what to ask for?**"
-
----
-
-# The honest cost
-
-| Tool | Cost | When to use |
-|---|---|---|
-| **ChatGPT / Claude (chat)** | $0–$20/mo | Quick questions, drafting, explanations |
-| **Claude Code / Cursor** | $20/mo + usage | Building actual software |
-| **Heavy use (API direct)** | $50–$300/mo | Daily power user |
-
-For comparison: hiring one developer for one week ≈ **$5,000+**.
-A year of Claude ≈ **$240**.
-
-The economics aren't close.
-
----
-
-# The HIPAA conversation
-
-**Do not paste patient identifiers into a public chatbot.** Consumer ChatGPT and Claude are **not HIPAA-compliant** by default.
-
-**Safer paths:**
-- Run the AI tool **on your own laptop** with **de-identified or synthetic data** (this is what we did today)
-- Use **enterprise tiers** with signed BAAs (Anthropic and OpenAI both offer them)
-- Talk to your **compliance officer before** putting any PHI near these tools
-
-**Rule of thumb:** if it would be a problem to email it to your friend, it's a problem to put it in a chatbot.
-
----
-
-# Maya's dashboard was synthetic on purpose
-
-The Sentinel data you saw isn't real. Elise generated it for this lecture.
-
-That's deliberate. **Demonstrate the workflow on fake data; rebuild on the real thing inside your organization's environment.**
-
-This is the pattern: prototype publicly, deploy privately.
-
----
-
-# How to start Monday morning
-
-1. **Install Claude Desktop** (free) at [claude.ai/download](https://claude.ai/download)
-2. **Pick one boring task** — a report you make every month, a spreadsheet you clean up by hand
-3. **Ask it:** *"Help me automate this. Here's an example of what I do today."*
-4. Spend 30 minutes. See how far it gets.
-
-That's the whole first step. Not a course. Not a certification. **Thirty minutes.**
-
----
-
-# What I want you to leave with
-
-1. **You can now make software without being a software engineer.** This is new. It's real.
-2. **Start with one small, real thing.** Not a moonshot.
-3. **Be careful with patient data.** HIPAA hasn't gone away.
-4. **The skill that matters isn't typing prompts.** It's knowing what's worth building — and that's what you already have.
+- **LLM** — *Large Language Model.* The AI behind the curtain. Reads text, writes text, makes decisions.
+- **Claude** — the LLM I use. Made by Anthropic. (ChatGPT is OpenAI's; Gemini is Google's.)
+- **Claude Code** — a tool that lets Claude read, write, and run files **on my laptop**, not just chat in a browser.
+- **Terminal** — the black text window I type into. It's just another way to talk to your computer.
+- **Git repo** — a folder on my laptop that **tracks every change**, so I can undo anything.
+- **GitHub** — a website where Git repos live online; lets you share + back up your code.
+- **Streamlit** — the tool that turns Python data code into a web dashboard with almost no extra work.
 
 ---
 
@@ -331,7 +192,7 @@ That's the whole first step. Not a course. Not a certification. **Thirty minutes
 
 **The deck and the dashboard you saw** are in a repo I'll share after the talk.
 
-Merci à **Elise** pour l'invitation. Thank you all for your attention.
+Merci à **Dr. Elise Lambert** et **Dr. Julia Fleck** pour l'invitation. Thank you all for your attention.
 
 ---
 
