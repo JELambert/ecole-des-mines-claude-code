@@ -2,7 +2,7 @@
 marp: true
 theme: default
 paginate: true
-header: 'Claude Code for a Non-Programmer'
+header: 'Describing Is the New Doing'
 footer: 'Joshua E. Lambert · École des Mines · 2026-05-22'
 style: |
   section {
@@ -25,9 +25,9 @@ style: |
 ---
 
 <!-- _class: lead -->
-# Making Software Without Being a Software Engineer
+# Describing Is the New Doing
 
-## Claude Code for a non-programmer
+## Building your own software with Claude Code
 
 **Joshua E. Lambert, PhD**
 École des Mines de Saint-Étienne · 2026-05-22
@@ -166,15 +166,22 @@ When something looks unfamiliar, stop me. The vocabulary on the next slide shoul
 
 ---
 
-# Vocabulary you'll see
+# Vocabulary you'll see (1 of 2)
 
 - **LLM** — *Large Language Model.* The AI behind the curtain. Reads text, writes text, makes decisions.
 - **Claude** — the LLM I use. Made by Anthropic. (ChatGPT is OpenAI's; Gemini is Google's.)
 - **Claude Code** — a tool that lets Claude read, write, and run files **on my laptop**, not just chat in a browser.
 - **Terminal** — the black text window I type into. It's just another way to talk to your computer.
+
+---
+
+# Vocabulary you'll see (2 of 2)
+
 - **Git repo** — a folder on my laptop that **tracks every change**, so I can undo anything.
 - **GitHub** — a website where Git repos live online; lets you share + back up your code.
 - **Streamlit** — the tool that turns Python data code into a web dashboard with almost no extra work.
+
+Don't worry about memorizing these — they'll come up in context.
 
 ---
 
@@ -208,7 +215,7 @@ The dashboard answers **today's question** — Maya's question — about Sentine
 
 A package format called **PAX** (*Portable Analytical eXpertise*) goes further: it wraps the *domain itself* — the concepts, the findings, the data, and the analysis playbook — so the next health system can run the same analysis on their own data and get a comparable answer.
 
-The repo includes a PAX skeleton for the Sentinel domain. Ask afterward if curious.
+Ask afterward if curious.
 
 ---
 
@@ -222,3 +229,18 @@ The repo includes a PAX skeleton for the Sentinel domain. Ask afterward if curio
 - **Git** — version control; every change is undoable
 
 You don't need to learn any of these to *use* what AI builds for you. Those are the names to google later.
+
+---
+
+# Bonus: what's in the shared repo
+
+- **`data/`** — the synthetic Sentinel Health CSV
+- **`slides/`** — this deck (Marp markdown)
+- **`docs/`** — five guides:
+  1. How to analyze the data with Claude Code
+  2. How to build the dashboard (the prompt I used)
+  3. How to update the dashboard
+  4. Git & GitHub — the 10-minute version
+  5. What Claude Code actually is
+
+No dashboard code is shipped. You generate it yourself by pasting the prompt in guide #2.

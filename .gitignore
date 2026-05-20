@@ -5,22 +5,16 @@ __pycache__/
 .uv/
 *.egg-info/
 
-# Streamlit
-.streamlit/secrets.toml
-
 # Build outputs
 slides/*.pdf
 slides/*.html
 slides/*.pptx
 
-# Data — never commit raw datasets from Elise without explicit OK
-dashboard/data/*.xlsx
-dashboard/data/*.csv
-dashboard/data/*.parquet
-!dashboard/data/.gitkeep
-!dashboard/data/README.md
-# Synthetic dataset Elise sent — safe to commit (no PHI)
-!dashboard/data/sentinel_health_pilot.csv
+# Presenter-only — not part of the student handout
+PLAN.md
+docs/timeline.md
+docs/demo-script.md
+docs/dataset-deep-dive.md
 
 # OS
 .DS_Store
