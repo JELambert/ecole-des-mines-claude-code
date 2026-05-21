@@ -5,9 +5,8 @@ __pycache__/
 .uv/
 *.egg-info/
 
-# Build outputs
-slides/*.pdf
-slides/*.html
+# Build outputs — keep PDF + HTML in the repo so students can download
+# them without installing Marp.
 slides/*.pptx
 
 # Presenter-only — not part of the student handout
